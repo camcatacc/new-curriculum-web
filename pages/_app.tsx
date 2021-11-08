@@ -1,7 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "tailwindcss/tailwind.css";
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "@material-ui/core";
+import { appTheme } from "../styles/materialUi";
+import { appWithTranslation } from "next-i18next";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+    return (
+        <ThemeProvider theme={appTheme}>
+            <Component {...pageProps} />
+        </ThemeProvider>
+    );
 }
-export default MyApp
+export default appWithTranslation(MyApp);
