@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AbilityTitle Renders as expected 1`] = `
+<div>
+  <h3
+    class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter"
+  >
+    Hello, hello
+  </h3>
+</div>
+`;

@@ -1,18 +1,20 @@
+// Modules
 import React from "react";
-import { MenuElement } from "../atoms/MenuElement";
 
-export const ListMenuElements = (props: { menuElementsNames: string[] }) => {
-    const { menuElementsNames } = props;
-    return (
-        <div className="flex-row flex gap-28">
-            {menuElementsNames.map((val, ind) => (
-                <MenuElement
-                    name={val}
-                    onPressed={() => {}}
-                    selected={false}
-                    key={`menuElement${ind}`}
-                />
-            ))}
-        </div>
-    );
-};
+// Elements
+import { MenuElement } from "components/atoms/MenuElement/MenuElement";
+
+// Definitions
+export interface ListMenuElementsProps {
+	menuElementsNames: string[];
+}
+
+// Element
+const ListMenuElements = ({ menuElementsNames }: ListMenuElementsProps) => (
+	<div className="flex-row flex gap-28">
+		{menuElementsNames.map((val, ind) => (
+			<MenuElement title={val} onClicked={() => {}} selected={false} key={`menuElement${ind}`} />
+		))}
+	</div>
+);
+export default ListMenuElements;

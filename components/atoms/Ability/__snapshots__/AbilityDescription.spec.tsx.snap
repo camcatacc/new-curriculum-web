@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AbilityDescription Renders as expected 1`] = `
+<div>
+  <p
+    class="MuiTypography-root font-light MuiTypography-body2 MuiTypography-alignCenter"
+  >
+    Hello, hello
+  </p>
+</div>
+`;

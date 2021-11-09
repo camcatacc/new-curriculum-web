@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionTitleDivider Renders as expected 1`] = `
+<div>
+  <div
+    class="self-center border-b-4 border-solid w-20 mt-4 mb-4"
+    style="border-color: rgb(35,35,35);"
+  />
+</div>
+`;
