@@ -1,7 +1,10 @@
 // Modules
 import React from "react";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { getAbilitiesPage } from "services/cms/contentful";
+import getEntries from "services/cms/contentful";
+
+// CONST
+import { CONTENT_TYPE_PRESENTATION_PAGE } from "interfaces/cms/pages/Presentation";
+import { CONTENT_TYPE_MENU_BAR } from "interfaces/cms/menuBar/MenuBar";
 
 // Elements
 import PageSize from "components/atoms/PageSize/PageSize";
@@ -10,26 +13,34 @@ import Abilities from "components/templates/Abilities";
 import Presentation from "components/templates/Presentation";
 
 // Definitions
-import type { NextPage } from "next";
+import type { CmsPresentationPage } from "interfaces/cms/pages/Presentation";
+import type { CmsMenuBar } from "interfaces/cms/menuBar/MenuBar";
+
+export interface HomePageProps {
+	aboutPage: CmsPresentationPage;
+	menu: CmsMenuBar;
+}
 
 // nextJS
-export const getStaticProps = async ({ locale }: any) => {
-	const abilities = await getAbilitiesPage();
+export const getStaticProps = async ({ locale, locales }: any) => {
+	console.log(locale);
+	const aboutPage = await getEntries<CmsPresentationPage>(CONTENT_TYPE_PRESENTATION_PAGE, locale);
+	const menu = await getEntries<CmsMenuBar>(CONTENT_TYPE_MENU_BAR, locale);
 	return {
 		props: {
-			...(await serverSideTranslations(locale, ["common", "footer"])),
-			abilities
+			aboutPage,
+			menu
 		}
 	};
 };
 
 // Element
-const Home: NextPage = ({ abilities }: any) => {
+const Home = ({ aboutPage, menu }: HomePageProps) => {
 	return (
 		<div className="flex flex-col w-full items-center">
-			<MenuBar />
+			<MenuBar elements={menu.elements.map((el) => el.fields)} />
 			<PageSize>
-				<Presentation className="mb-20" />
+				<Presentation className="mb-20" {...aboutPage} />
 				{/* 				<Abilities {...abilities} />
 				 */}
 			</PageSize>

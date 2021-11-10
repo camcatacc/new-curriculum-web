@@ -8,12 +8,16 @@ import ListMenuElements from "components/molecules/ListMenuElements";
 // Styles
 import { secondary } from "styles/customColors";
 
+// Definitions
+export interface MenuBarProps {
+	elements: { name: string; path: string }[];
+}
 // Element
-const MenuBar = () => {
+const MenuBar = ({ elements }: MenuBarProps) => {
 	return (
 		<div style={{ backgroundColor: secondary }} className="w-full sticky top-0 flex justify-center pt-3 pb-3 z-50">
 			<PageSize>
-				<ListMenuElements menuElementsNames={["INICI", "QUI SÓC"]} />
+				<ListMenuElements menuElementsNames={elements.map((el) => el.name)} />
 			</PageSize>
 		</div>
 	);

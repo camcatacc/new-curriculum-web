@@ -12,9 +12,7 @@ export interface ListMenuElementsProps {
 // Element
 const ListMenuElements = ({ menuElementsNames }: ListMenuElementsProps) => (
 	<div className="flex-row flex gap-28">
-		{menuElementsNames.map((val, ind) => (
-			<MenuElement title={val} onClicked={() => {}} selected={false} key={`menuElement${ind}`} />
-		))}
+		{menuElementsNames.length > 0 && menuElementsNames.map((val, ind) => <MenuElement title={val} onClicked={() => {}} selected={false} key={`menuElement${ind}`} />)}
 	</div>
 );
 export default ListMenuElements;
