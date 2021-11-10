@@ -1,10 +1,9 @@
 // Modules
-import React from "react";
+import React, { useRef } from "react";
 import getEntries from "services/cms/contentful";
 
-// CONST
-import { CONTENT_TYPE_PRESENTATION_PAGE } from "interfaces/cms/pages/Presentation";
-import { CONTENT_TYPE_MENU_BAR } from "interfaces/cms/menuBar/MenuBar";
+// Constants
+import { CONTENT_TYPE_INDEX_PAGE } from "interfaces/cms/IndexPage";
 
 // Elements
 import PageSize from "components/atoms/PageSize/PageSize";
@@ -13,41 +12,67 @@ import Abilities from "components/templates/Abilities/Abilities";
 import Presentation from "components/templates/Presentation/Presentation";
 
 // Definitions
-import type { CmsPresentationPage } from "interfaces/cms/pages/Presentation";
-import type { CmsMenuBar } from "interfaces/cms/menuBar/MenuBar";
+import type { IndexPage } from "interfaces/cms/IndexPage";
+import type { ContentfulEntry } from "interfaces/cms/contentful";
+import type { Page } from "interfaces/cms/pages/Page";
+import useOnScreen from "utils/hooks/useOnScreen";
 
 export interface HomePageProps {
-	aboutPage: CmsPresentationPage;
-	menu: CmsMenuBar;
+	content: IndexPage;
 }
 
 // nextJS
 export const getStaticProps = async ({ locale, locales }: any): Promise<{ props: HomePageProps }> => {
-	const aboutPage = await getEntries<CmsPresentationPage>(CONTENT_TYPE_PRESENTATION_PAGE, locale);
-	const menu = await getEntries<CmsMenuBar>(CONTENT_TYPE_MENU_BAR, locale);
+	const indexPage = await getEntries<IndexPage>(CONTENT_TYPE_INDEX_PAGE, locale);
+
 	return {
 		props: {
-			aboutPage,
-			menu
+			content: { ...indexPage }
 		}
 	};
 };
 
 // Element
-const Home = ({ aboutPage, menu }: HomePageProps) => {
-	const formattedMenuElements = menu.elements.map((el) => {
-		return { name: el.fields.name, onClick: () => {} };
+const Home = ({ content }: HomePageProps) => {
+	const commonRef = useRef<(HTMLElement | null)[]>([]);
+	const visibleRefs = useOnScreen(commonRef);
+
+	const formattedMenuElements = content.pages.map((page, i) => {
+		return {
+			name: page.fields.name,
+			onClick: () => window.scrollTo({ top: (commonRef.current[i]?.getBoundingClientRect().top ?? 0) + window.scrollY - 55, behavior: "smooth" }),
+			id: page.fields.id
+		};
 	});
+
+	const getSelectedId = () => {
+		let id = "";
+		visibleRefs.some((bool, i) => {
+			id = bool ? content.pages[i].fields.id : id;
+			return bool;
+		});
+		return id;
+	};
+
 	return (
 		<div className="flex flex-col w-full items-center">
-			<MenuBar elements={formattedMenuElements} />
+			<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
 			<PageSize>
-				<Presentation className="mb-20" {...aboutPage} />
-				{/* 				<Abilities {...abilities} />
-				 */}
+				{content.pages.map((page, i) => (
+					<section key={`page${i}`} style={{ marginBottom: 150 }} ref={(ref) => (commonRef.current[i] = ref)}>
+						{getPageComponent(page)}
+					</section>
+				))}
 			</PageSize>
 		</div>
 	);
+};
+
+const getPageComponent = (page: ContentfulEntry<Page>) => {
+	switch (page.fields.type) {
+		case "PresentationPage":
+			return <Presentation {...page.fields.content.fields} />;
+	}
 };
 
 export default Home;

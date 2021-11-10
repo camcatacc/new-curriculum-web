@@ -22,9 +22,7 @@ const About = ({ name, surname, paragraphsDoc }: AboutProps) => {
 		renderNode: {
 			[BLOCKS.PARAGRAPH]: (_: any, children: any) => (
 				<div className="mb-8">
-					<Paragraph>
-						<span>{children}</span>
-					</Paragraph>
+					<Paragraph>{children}</Paragraph>
 				</div>
 			)
 		}
@@ -36,11 +34,7 @@ const About = ({ name, surname, paragraphsDoc }: AboutProps) => {
 				<AvatarWithName name={name} surname={surname} />
 			</div>
 			<div style={{ flex: 2 }}>
-				<div className="mb-8">
-					<Paragraph>
-						<span>{paragraphs}</span>
-					</Paragraph>
-				</div>
+				<div className="mb-8">{paragraphs}</div>
 			</div>
 		</div>
 	);

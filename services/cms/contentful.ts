@@ -19,7 +19,7 @@ function getEntries<T>(ctUid: string, locale: string, extraParams: GetEntriesPar
 	let params: { [key: string]: string } = {};
 	extraParams.id && (params["id"] = extraParams.id);
 	return client
-		.getEntries({ content_type: ctUid, locale, ...params })
+		.getEntries({ content_type: ctUid, locale, include: 9, ...params })
 		.then((res: ContentfulResponse<T>) => res.items[0].fields)
 		.catch((err: any) => console.error(err));
 }

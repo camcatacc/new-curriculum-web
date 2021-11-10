@@ -20,7 +20,6 @@ export const MenuElement = ({ selected, onClicked, title }: MenuElementProps) =>
 	return (
 		<Typography>
 			<Link
-				href="#"
 				color="textSecondary"
 				style={{
 					color: selected ? primary : white
