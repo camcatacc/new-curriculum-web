@@ -8,9 +8,9 @@ import { CONTENT_TYPE_MENU_BAR } from "interfaces/cms/menuBar/MenuBar";
 
 // Elements
 import PageSize from "components/atoms/PageSize/PageSize";
-import MenuBar from "components/organisms/MenuBar";
-import Abilities from "components/templates/Abilities";
-import Presentation from "components/templates/Presentation";
+import MenuBar from "components/organisms/MenuBar/MenuBar";
+import Abilities from "components/templates/Abilities/Abilities";
+import Presentation from "components/templates/Presentation/Presentation";
 
 // Definitions
 import type { CmsPresentationPage } from "interfaces/cms/pages/Presentation";

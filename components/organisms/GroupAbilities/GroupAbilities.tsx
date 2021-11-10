@@ -2,10 +2,10 @@
 import React from "react";
 
 // Elements
-import Ability from "components/molecules/Ability";
+import Ability from "components/molecules/Ability/Ability";
 
 // Definitions
-import type { AbilityProps } from "components/molecules/Ability";
+import type { AbilityProps } from "components/molecules/Ability/Ability";
 
 export interface GroupAbilitiesProps {
 	abilities: AbilityProps[];

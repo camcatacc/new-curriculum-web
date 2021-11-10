@@ -2,8 +2,8 @@
 import React from "react";
 
 // Elements
-import SectionTitle from "components/molecules/SectionTitle";
-import About from "components/organisms/About";
+import SectionTitle from "components/molecules/SectionTitle/SectionTitle";
+import About from "components/organisms/About/About";
 import { CmsPresentationPage } from "interfaces/cms/pages/Presentation";
 
 // Definitions

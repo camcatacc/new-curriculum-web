@@ -2,11 +2,11 @@
 import React from "react";
 
 // Elements
-import BarAbility from "components/molecules/BarAbility";
+import BarAbility from "components/molecules/BarAbility/BarAbility";
 import { Typography } from "@material-ui/core";
 
 // Definitions
-import type { BarAbilityProps, FormatBarAbilityProps, UnformattedBarAbilityProps } from "components/molecules/BarAbility";
+import type { BarAbilityProps, FormatBarAbilityProps, UnformattedBarAbilityProps } from "components/molecules/BarAbility/BarAbility";
 
 export interface GroupBarAbilitiesProps {
 	abilities: BarAbilityProps[];

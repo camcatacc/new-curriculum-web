@@ -3,7 +3,7 @@ import React from "react";
 
 // Elements
 import PageSize from "components/atoms/PageSize/PageSize";
-import ListMenuElements from "components/molecules/ListMenuElements";
+import ListMenuElements from "components/molecules/ListMenuElements/ListMenuElements";
 
 // Styles
 import { secondary } from "styles/customColors";

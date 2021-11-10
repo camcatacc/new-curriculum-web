@@ -5,7 +5,7 @@ import { BLOCKS } from "@contentful/rich-text-types";
 
 // Elements
 import Paragraph from "components/atoms/Paragraph/Paragraph";
-import AvatarWithName from "components/molecules/AvatarWithName";
+import AvatarWithName from "components/molecules/AvatarWithName/AvatarWithName";
 
 // Definitions
 import type { Document } from "@contentful/rich-text-types";

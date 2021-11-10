@@ -2,15 +2,15 @@
 import React from "react";
 
 // Elements
-import SectionTitle from "components/molecules/SectionTitle";
-import GroupAbilities from "components/organisms/GroupAbilities";
+import SectionTitle from "components/molecules/SectionTitle/SectionTitle";
+import GroupAbilities from "components/organisms/GroupAbilities/GroupAbilities";
 
 // Styles
 import { darkPink, brightPink, white } from "styles/customColors";
 
 // Definitions
-import type { AbilityProps } from "components/molecules/Ability";
-import type { UnformattedBarAbilityProps, FormatBarAbilityProps } from "components/molecules/BarAbility";
+import type { AbilityProps } from "components/molecules/Ability/Ability";
+import type { UnformattedBarAbilityProps, FormatBarAbilityProps } from "components/molecules/BarAbility/BarAbility";
 
 export interface AbilitiesProps {
 	title: string;
