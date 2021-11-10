@@ -40,7 +40,6 @@ describe("MenuElement", () => {
 	it("If selected is true, the color is primary", () => {
 		const { getByRole } = renderComponent({ selected: true });
 		const link = getByRole("link");
-		console.log(link.style);
 		expect(link).toHaveStyle(`color: ${primary}`);
 	});
 

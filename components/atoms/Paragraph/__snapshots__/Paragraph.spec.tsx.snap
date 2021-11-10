@@ -4,7 +4,7 @@ exports[`Paragraph Renders as expected 1`] = `
 <div>
   <p
     class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify"
-    style="line-height: 2.2;"
+    style="line-height: 2;"
   >
     <p>
       Bu

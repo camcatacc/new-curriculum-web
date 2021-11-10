@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionTitle Renders as expected 1`] = `
+<div>
+  <div
+    class="flex flex-col mt-8 mb-8"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter"
+    >
+      This is a Section Title
+    </h2>
+    <div
+      class="self-center border-b-4 border-solid w-20 mt-4 mb-4"
+      style="border-color: rgb(35,35,35);"
+    />
+  </div>
+</div>
+`;

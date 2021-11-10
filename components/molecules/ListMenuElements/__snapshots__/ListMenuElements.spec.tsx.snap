@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListMenuElements Renders as expected 1`] = `
+<div>
+  <div
+    class="flex-row flex gap-28"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1"
+    >
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineHover cursor-pointer linkButton font-regular MuiTypography-colorTextSecondary"
+        href="#"
+        style="color: rgb(255, 255, 255);"
+      >
+        Home
+      </a>
+    </p>
+  </div>
+</div>
+`;

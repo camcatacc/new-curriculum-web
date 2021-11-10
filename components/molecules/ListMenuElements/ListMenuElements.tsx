@@ -6,13 +6,14 @@ import { MenuElement } from "components/atoms/MenuElement/MenuElement";
 
 // Definitions
 export interface ListMenuElementsProps {
-	menuElementsNames: string[];
+	menuElements: { name: string; onClick: () => void }[];
 }
 
 // Element
-const ListMenuElements = ({ menuElementsNames }: ListMenuElementsProps) => (
+const ListMenuElements = ({ menuElements }: ListMenuElementsProps) => (
 	<div className="flex-row flex gap-28">
-		{menuElementsNames.length > 0 && menuElementsNames.map((val, ind) => <MenuElement title={val} onClicked={() => {}} selected={false} key={`menuElement${ind}`} />)}
+		{menuElements.length > 0 && menuElements.map((val, ind) => <MenuElement title={val.name} onClicked={val.onClick} selected={false} key={`menuElement${ind}`} />)}
 	</div>
 );
+
 export default ListMenuElements;

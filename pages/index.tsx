@@ -23,7 +23,6 @@ export interface HomePageProps {
 
 // nextJS
 export const getStaticProps = async ({ locale, locales }: any): Promise<{ props: HomePageProps }> => {
-	console.log(locale);
 	const aboutPage = await getEntries<CmsPresentationPage>(CONTENT_TYPE_PRESENTATION_PAGE, locale);
 	const menu = await getEntries<CmsMenuBar>(CONTENT_TYPE_MENU_BAR, locale);
 	return {
@@ -36,9 +35,12 @@ export const getStaticProps = async ({ locale, locales }: any): Promise<{ props:
 
 // Element
 const Home = ({ aboutPage, menu }: HomePageProps) => {
+	const formattedMenuElements = menu.elements.map((el) => {
+		return { name: el.fields.name, onClick: () => {} };
+	});
 	return (
 		<div className="flex flex-col w-full items-center">
-			<MenuBar elements={menu.elements.map((el) => el.fields)} />
+			<MenuBar elements={formattedMenuElements} />
 			<PageSize>
 				<Presentation className="mb-20" {...aboutPage} />
 				{/* 				<Abilities {...abilities} />

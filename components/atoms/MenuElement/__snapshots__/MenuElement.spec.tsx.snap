@@ -7,7 +7,7 @@ exports[`MenuElement Renders as expected 1`] = `
   >
     <a
       class="MuiTypography-root MuiLink-root MuiLink-underlineHover cursor-pointer linkButton font-regular MuiTypography-colorTextSecondary"
-      href=""
+      href="#"
       style="color: rgb(255, 255, 255);"
     >
       Home
