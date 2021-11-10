@@ -22,7 +22,7 @@ export interface HomePageProps {
 }
 
 // nextJS
-export const getStaticProps = async ({ locale, locales }: any) => {
+export const getStaticProps = async ({ locale, locales }: any): Promise<{ props: HomePageProps }> => {
 	console.log(locale);
 	const aboutPage = await getEntries<CmsPresentationPage>(CONTENT_TYPE_PRESENTATION_PAGE, locale);
 	const menu = await getEntries<CmsMenuBar>(CONTENT_TYPE_MENU_BAR, locale);
