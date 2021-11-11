@@ -59,8 +59,8 @@ const Home = ({ content }: HomePageProps) => {
 			<div className="flex flex-col w-full items-center">
 				<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
 				{content.pages.map((page, i) => (
-					<section key={`page${i}`} className={`mb-12 w-full flex justify-center ${page.fields.stripe ? "bg-gray-100" : ""}`} ref={(ref) => (commonRef.current[i] = ref)}>
-						<PageSize>{convertCmsPageToComponent(page)}</PageSize>
+					<section key={`page${i}`} className={`w-full flex justify-center ${page.fields.stripe ? "bg-gray-100" : ""}`} ref={(ref) => (commonRef.current[i] = ref)}>
+						<PageSize className="mb-12">{convertCmsPageToComponent(page)}</PageSize>
 					</section>
 				))}
 			</div>

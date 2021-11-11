@@ -17,7 +17,7 @@ export interface BarAbilityProps {
 // Element
 const BarAbility = ({ percentage, name, titleColor, barColor, fontColor }: BarAbilityProps) => (
 	<div className="flex flex-row justify-center">
-		<div className="w-32">
+		<div className="w-40 md:w-32 truncate">
 			<BarTitle backgroundColor={titleColor} fontColor={fontColor} title={name} />
 		</div>
 		<div className="w-full md:w-80 ">
