@@ -16,14 +16,14 @@ export interface AboutProps {
 
 // Element
 const About = ({ name, surname, paragraphsDoc }: AboutProps) => {
-	const paragraphs = customDocumentToReactComponent(paragraphsDoc, { splitParagraph: true, boldColor: true });
+	const paragraphs = customDocumentToReactComponent(paragraphsDoc, { marginBottom: 8, boldColor: true });
 	return (
 		<div style={{ gap: "10%" }} className="flex flex-col md:flex-row items-center">
-			<div style={{ flex: 1 }} className="w-full md:w-auto">
+			<div style={{ flex: 1 }} className="w-3/5 md:w-auto">
 				<AvatarWithName name={name} surname={surname} />
 			</div>
-			<div style={{ flex: 2 }}>
-				<div className="mb-8">{paragraphs}</div>
+			<div style={{ flex: 2 }} className="mt-4 md:mt-0">
+				{paragraphs}
 			</div>
 		</div>
 	);

@@ -12,7 +12,7 @@ export interface SectionTitleTextProps {
 // Element
 const SectionTitleText = ({ children }: SectionTitleTextProps) => {
 	return (
-		<Typography variant="h2" align="center">
+		<Typography variant="h2" align="center" className="uppercase">
 			{children}
 		</Typography>
 	);

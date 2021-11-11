@@ -4,6 +4,9 @@ import React from "react";
 // Elements
 import { Typography } from "@material-ui/core";
 
+// Styling
+import { secondary } from "styles/customColors";
+
 // Definitions
 export interface AvatarNameProps {
 	name: string;
@@ -13,11 +16,8 @@ export interface AvatarNameProps {
 // Element
 const AvatarName = ({ name, surname }: AvatarNameProps) => {
 	return (
-		<Typography variant="h3" align="center">
-			{name} <br />
-			<Typography variant="inherit" className="leading-loose" style={{ fontSize: "smaller" }}>
-				{surname}
-			</Typography>
+		<Typography variant="h3" align="center" style={{ color: secondary }}>
+			{name} {surname}
 		</Typography>
 	);
 };

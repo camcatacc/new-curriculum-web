@@ -15,6 +15,7 @@ import convertCmsPageToComponent from "utils/convertCmsPageToComponent";
 
 // Definitions
 import type { IndexPage } from "interfaces/cms/IndexPage";
+import Layout from "components/container/Layout";
 
 export interface HomePageProps {
 	content: IndexPage;
@@ -54,16 +55,18 @@ const Home = ({ content }: HomePageProps) => {
 	};
 
 	return (
-		<div className="flex flex-col w-full items-center">
-			<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
-			<PageSize>
+		<Layout>
+			<div className="flex flex-col w-full items-center">
+				<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
 				{content.pages.map((page, i) => (
-					<section key={`page${i}`} style={{ marginBottom: 50 }} ref={(ref) => (commonRef.current[i] = ref)}>
-						{convertCmsPageToComponent(page)}
-					</section>
+					<PageSize key={`page${i}`} className={`${page.fields.stripe ? "bg-gray-100" : ""}`}>
+						<section style={{ marginBottom: 50 }} ref={(ref) => (commonRef.current[i] = ref)}>
+							{convertCmsPageToComponent(page)}
+						</section>
+					</PageSize>
 				))}
-			</PageSize>
-		</div>
+			</div>
+		</Layout>
 	);
 };
 

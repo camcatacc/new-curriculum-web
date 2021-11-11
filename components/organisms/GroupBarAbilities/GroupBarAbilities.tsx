@@ -18,10 +18,12 @@ export interface GroupBarAbilitiesProps {
 
 // Element
 const GroupBarAbilities = ({ abilities, title, titleColor, barColor, fontColor }: GroupBarAbilitiesProps) => (
-	<div className="flex flex-col flex-1 gap-4">
-		<Typography variant="h3" align="center">
-			{title}
-		</Typography>
+	<div className="flex flex-col flex-1 gap-3">
+		<div className="mb-2">
+			<Typography variant="h3" align="center">
+				{title}
+			</Typography>
+		</div>
 		{abilities.map((ab, ind) => (
 			<BarAbility {...ab} key={`ab${ind}`} barColor={ab.barColor ?? barColor} fontColor={ab.fontColor ?? fontColor} titleColor={ab.titleColor ?? titleColor} />
 		))}

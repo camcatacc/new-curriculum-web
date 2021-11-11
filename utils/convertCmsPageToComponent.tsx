@@ -7,16 +7,20 @@ import Presentation from "components/templates/Presentation/Presentation";
 
 // Definitions
 import type { ContentfulEntry } from "interfaces/cms/contentful";
-import type { Page } from "interfaces/cms/pages/Page";
+import type { CmsPage } from "interfaces/cms/pages/Page";
 import type { CmsPresentationPage } from "interfaces/cms/pages/Presentation";
 import type { CmsAbilitiesPage } from "interfaces/cms/pages/Abilities";
+import { CmsFindMePage } from "interfaces/cms/pages/FindMe";
+import FindMe from "components/templates/FindMe/FindMe";
 
-const convertCmsPageToComponent = (page: ContentfulEntry<Page>) => {
+const convertCmsPageToComponent = (page: ContentfulEntry<CmsPage>) => {
 	switch (page.fields.type) {
 		case "PresentationPage":
 			return presentationCmsToComponent(page.fields.content.fields);
 		case "AbilitiesPage":
 			return abilitiesCmsToComponent(page.fields.content.fields);
+		case "FindMePage":
+			return findMeCmsToComponent(page.fields.content.fields);
 	}
 };
 
@@ -30,5 +34,7 @@ const abilitiesCmsToComponent = (page: CmsAbilitiesPage) => {
 
 	return <Abilities title={page.title} abilitiesLists={lists} />;
 };
+
+const findMeCmsToComponent = (page: CmsFindMePage) => <FindMe {...page} />;
 
 export default convertCmsPageToComponent;

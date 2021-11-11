@@ -17,10 +17,10 @@ export interface AbilityProps {
 
 // Element
 const Ability = ({ title, description, icon }: AbilityProps) => {
-	const formattedDescription = customDocumentToReactComponent(description, { boldColor: true });
+	const formattedDescription = customDocumentToReactComponent(description, { boldColor: true, align: "center" });
 	return (
 		<div className="w-full h-full flex-col flex items-center">
-			<div className="w-1/4">
+			<div className="md:w-1/5 w-2/5">
 				<AbilityIcon icon={icon} />
 			</div>
 			<div className="mt-4 mb-2">

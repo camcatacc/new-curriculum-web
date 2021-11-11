@@ -29,10 +29,8 @@ const MenuBar = ({ elements, selectedId }: MenuBarProps) => {
 	});
 
 	return (
-		<div ref={ref} style={{ backgroundColor: secondary, transition: "top 1s" }} className="w-full sticky top-0 flex justify-center pt-3 pb-3 z-50">
-			<PageSize>
-				<ListMenuElements menuElements={elements} selectedId={selectedId} />
-			</PageSize>
+		<div ref={ref} style={{ backgroundColor: secondary, transition: "top 1s" }} className="w-full sticky top-0 md:flex justify-center pt-3 pb-3 z-50 hidden">
+			<ListMenuElements menuElements={elements} selectedId={selectedId} className="w-4/5 max-w-screen-lg" />
 		</div>
 	);
 };

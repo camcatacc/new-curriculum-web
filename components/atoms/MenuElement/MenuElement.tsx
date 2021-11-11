@@ -17,7 +17,7 @@ export interface MenuElementProps {
 
 // Element
 const MenuElement = ({ selected, onClicked, title }: MenuElementProps) => (
-	<Typography>
+	<Typography variant="body2">
 		<Link
 			color="textSecondary"
 			style={{

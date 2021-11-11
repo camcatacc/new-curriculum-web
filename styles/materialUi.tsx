@@ -15,15 +15,16 @@ export const appTheme = createTheme({
 		}
 	},
 	typography: {
-		fontFamily: ['"Segoe UI"'].join(","),
+		fontFamily: ['"Arial"'].join(","),
 		h2: {
+			fontFamily: ['"Segoe UI"'].join(","),
 			fontWeight: 700,
-			fontSize: "2rem",
+			fontSize: "1.6rem",
 			color: black
 		},
 		h3: {
 			fontWeight: 600,
-			fontSize: "1.2rem",
+			fontSize: "1.1rem",
 			color: black
 		},
 		body1: {
@@ -33,7 +34,7 @@ export const appTheme = createTheme({
 		},
 		body2: {
 			fontWeight: 200,
-			fontSize: "1.2rem",
+			fontSize: "1rem",
 			color: darkGrey
 		}
 	}

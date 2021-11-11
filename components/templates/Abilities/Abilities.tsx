@@ -18,16 +18,16 @@ export interface AbilitiesProps {
 const Abilities = ({ title, abilitiesLists }: AbilitiesProps) => (
 	<div className="md:min-h-screen">
 		<SectionTitle>{title}</SectionTitle>
-		<div className="flex flex-1 flex-col gap-20">
-			{abilitiesLists.map((abList) => {
+		<div className="flex flex-1 flex-col md:gap-20 gap-14">
+			{abilitiesLists.map((abList, ind) => {
 				switch (abList.type) {
 					case "AbilitiesList":
-						return <GroupAbilities abilities={abList.abilities.map((ab) => ab.fields)} />;
+						return <GroupAbilities key={`abList${ind}`} abilities={abList.abilities.map((ab) => ab.fields)} />;
 					case "GroupBarAbilitiesList":
 						return (
-							<div className="flex flex-row gap-x-32 gap-y-10 flex-wrap justify-center">
-								{abList.abilitiesGroups.map((abGroup) => (
-									<GroupBarAbilities {...abGroup.fields} abilities={abGroup.fields.abilities.map((ab) => ab.fields)} />
+							<div key={`abList${ind}`} className="flex flex-row gap-x-32 gap-y-10 flex-wrap justify-center">
+								{abList.abilitiesGroups.map((abGroup, ind2) => (
+									<GroupBarAbilities key={`abGroup${ind2}`} {...abGroup.fields} abilities={abGroup.fields.abilities.map((ab) => ab.fields)} />
 								))}
 							</div>
 						);

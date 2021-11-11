@@ -20,7 +20,7 @@ const BarAbility = ({ percentage, name, titleColor, barColor, fontColor }: BarAb
 		<div className="w-32">
 			<BarTitle backgroundColor={titleColor} fontColor={fontColor} title={name} />
 		</div>
-		<div className="w-80">
+		<div className="w-full md:w-80 ">
 			<Bar backgroundColor={barColor} percentage={percentage} fontColor={fontColor} />
 		</div>
 	</div>

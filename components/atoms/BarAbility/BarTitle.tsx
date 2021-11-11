@@ -15,8 +15,8 @@ export interface BarTitleProps {
 // Element
 const BarTitle = ({ backgroundColor, title, fontSize = "1rem", fontColor = "white" }: BarTitleProps) => {
 	return (
-		<div className="pl-4 pr-4 pt-2 pb-2" style={{ backgroundColor: backgroundColor }}>
-			<Typography variant="body1" style={{ color: fontColor, fontSize: fontSize }} className="w-full truncate" align="center">
+		<div className="pl-2 pr-2 pt-1 pb-1" style={{ backgroundColor: backgroundColor }}>
+			<Typography variant="body2" style={{ color: fontColor, fontSize: fontSize }} className="w-full truncate" align="center">
 				{title}
 			</Typography>
 		</div>
