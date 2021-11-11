@@ -11,7 +11,7 @@ import type { BarProps } from "components/atoms/BarAbility/Bar";
 // Default Props
 const defaultProps: BarProps = {
 	percentage: 40,
-	color: "red"
+	backgroundColor: "red"
 };
 
 // Tests

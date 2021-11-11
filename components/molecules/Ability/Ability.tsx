@@ -1,22 +1,23 @@
 // Modules
 import React from "react";
+import customDocumentToReactComponent from "utils/customDocumentToReactComponent";
 
 // Elements
 import AbilityDescription from "components/atoms/Ability/AbilityDescription";
 import AbilityIcon from "components/atoms/Ability/AbilityIcon";
 import AbilityTitle from "components/atoms/Ability/AbilityTitle";
-import { OverridableComponent } from "@material-ui/core/OverridableComponent";
-import { SvgIconTypeMap } from "@material-ui/core/SvgIcon";
 
 // Definitions
+import type { Document } from "@contentful/rich-text-types";
 export interface AbilityProps {
 	title: string;
-	description: string;
-	icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
+	description: Document;
+	icon: string;
 }
 
 // Element
 const Ability = ({ title, description, icon }: AbilityProps) => {
+	const formattedDescription = customDocumentToReactComponent(description, { boldColor: true });
 	return (
 		<div className="w-full h-full flex-col flex items-center">
 			<div className="w-1/4">
@@ -25,7 +26,7 @@ const Ability = ({ title, description, icon }: AbilityProps) => {
 			<div className="mt-4 mb-2">
 				<AbilityTitle>{title}</AbilityTitle>
 			</div>
-			<AbilityDescription>{description}</AbilityDescription>
+			<AbilityDescription>{formattedDescription}</AbilityDescription>
 		</div>
 	);
 };

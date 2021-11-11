@@ -2,7 +2,7 @@
 import React from "react";
 
 // Elements
-import { MenuElement } from "components/atoms/MenuElement/MenuElement";
+import MenuElement from "components/atoms/MenuElement/MenuElement";
 
 // Definitions
 export interface ListMenuElementsProps {

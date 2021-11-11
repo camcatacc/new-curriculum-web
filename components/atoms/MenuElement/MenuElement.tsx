@@ -16,19 +16,19 @@ export interface MenuElementProps {
 }
 
 // Element
-export const MenuElement = ({ selected, onClicked, title }: MenuElementProps) => {
-	return (
-		<Typography>
-			<Link
-				color="textSecondary"
-				style={{
-					color: selected ? primary : white
-				}}
-				className={`cursor-pointer ${styles.linkButton} ${selected ? "font-semibold" : "font-regular"}`}
-				onClick={onClicked}
-			>
-				{title}
-			</Link>
-		</Typography>
-	);
-};
+const MenuElement = ({ selected, onClicked, title }: MenuElementProps) => (
+	<Typography>
+		<Link
+			color="textSecondary"
+			style={{
+				color: selected ? primary : white
+			}}
+			className={`cursor-pointer ${styles.linkButton} ${selected ? "font-semibold" : "font-regular"} uppercase`}
+			onClick={onClicked}
+		>
+			{title}
+		</Link>
+	</Typography>
+);
+
+export default MenuElement;

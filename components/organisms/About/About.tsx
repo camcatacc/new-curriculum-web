@@ -1,10 +1,8 @@
 // Modules
 import React from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS } from "@contentful/rich-text-types";
+import customDocumentToReactComponent from "utils/customDocumentToReactComponent";
 
 // Elements
-import Paragraph from "components/atoms/Paragraph/Paragraph";
 import AvatarWithName from "components/molecules/AvatarWithName/AvatarWithName";
 
 // Definitions
@@ -18,16 +16,7 @@ export interface AboutProps {
 
 // Element
 const About = ({ name, surname, paragraphsDoc }: AboutProps) => {
-	const options = {
-		renderNode: {
-			[BLOCKS.PARAGRAPH]: (_: any, children: any) => (
-				<div className="mb-8">
-					<Paragraph>{children}</Paragraph>
-				</div>
-			)
-		}
-	};
-	const paragraphs = documentToReactComponents(paragraphsDoc, options);
+	const paragraphs = customDocumentToReactComponent(paragraphsDoc, { splitParagraph: true, boldColor: true });
 	return (
 		<div style={{ gap: "10%" }} className="flex flex-col md:flex-row items-center">
 			<div style={{ flex: 1 }} className="w-full md:w-auto">
