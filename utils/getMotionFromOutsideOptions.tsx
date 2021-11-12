@@ -7,13 +7,13 @@ export function getMotionFromOutsideOptions(animated: boolean, animatedDirection
 
 	switch (animatedDirection) {
 		case "fromLeft":
-			initialX = -200;
+			initialX = -50;
 			break;
 		case "fromRight":
-			initialX = 200;
+			initialX = 50;
 			break;
 		case "fromBottom":
-			initialY = 200;
+			initialY = 50;
 			break;
 	}
 
