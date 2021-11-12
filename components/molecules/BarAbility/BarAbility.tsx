@@ -12,16 +12,17 @@ export interface BarAbilityProps {
 	titleColor: string;
 	barColor: string;
 	fontColor?: string;
+	animated?: boolean;
 }
 
 // Element
-const BarAbility = ({ percentage, name, titleColor, barColor, fontColor }: BarAbilityProps) => (
+const BarAbility = ({ percentage, name, titleColor, barColor, fontColor, animated }: BarAbilityProps) => (
 	<div className="flex flex-row justify-center">
 		<div className="w-40 md:w-32 truncate">
 			<BarTitle backgroundColor={titleColor} fontColor={fontColor} title={name} />
 		</div>
 		<div className="w-full md:w-80 ">
-			<Bar backgroundColor={barColor} percentage={percentage} fontColor={fontColor} />
+			<Bar backgroundColor={barColor} percentage={percentage} fontColor={fontColor} animated={animated} />
 		</div>
 	</div>
 );

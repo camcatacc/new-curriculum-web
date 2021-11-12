@@ -6,6 +6,9 @@ import SectionTitle from "components/molecules/SectionTitle/SectionTitle";
 import GroupAbilities from "components/organisms/GroupAbilities/GroupAbilities";
 import GroupBarAbilities from "components/organisms/GroupBarAbilities/GroupBarAbilities";
 
+// Auxiliary functions
+import calculateDirectionFromNumberColumns from "utils/calculateDirectionFromNumberColumns";
+
 // Definitions
 import type { CmsGroupBarAbilitiesList, CmsAbilitiesList } from "interfaces/cms/pages/Abilities";
 
@@ -27,7 +30,13 @@ const Abilities = ({ title, abilitiesLists }: AbilitiesProps) => (
 						return (
 							<div key={`abList${ind}`} className="flex flex-row gap-x-32 gap-y-10 flex-wrap justify-center">
 								{abList.abilitiesGroups.map((abGroup, ind2) => (
-									<GroupBarAbilities key={`abGroup${ind2}`} {...abGroup.fields} abilities={abGroup.fields.abilities.map((ab) => ab.fields)} />
+									<GroupBarAbilities
+										key={`abGroup${ind2}`}
+										{...abGroup.fields}
+										abilities={abGroup.fields.abilities.map((ab) => ab.fields)}
+										animated
+										animatedDirection={calculateDirectionFromNumberColumns(ind2 + 1, abList.abilitiesGroups.length, 2)}
+									/>
 								))}
 							</div>
 						);
