@@ -17,7 +17,7 @@ export interface AbilityProps {
 
 // Element
 const Ability = ({ title, description, icon }: AbilityProps) => {
-	const formattedDescription = customDocumentToReactComponent(description, { boldColor: true, align: "center" });
+	const formattedDescription = customDocumentToReactComponent(description, { boldColor: true, align: "center", variant: "body2" });
 	return (
 		<div className="w-full h-full flex-col flex items-center">
 			<div className="md:w-1/5 w-2/5">

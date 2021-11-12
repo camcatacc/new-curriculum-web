@@ -1,8 +1,7 @@
 // Modules
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 // Elements
-import PageSize from "components/atoms/PageSize/PageSize";
 import ListMenuElements from "components/molecules/ListMenuElements/ListMenuElements";
 
 // Styles
@@ -19,7 +18,7 @@ const MenuBar = ({ elements, selectedId }: MenuBarProps) => {
 	const ref = useRef<HTMLDivElement>(null);
 
 	// Hides the bar menu when scrolled down and shows it when scrolled up
-	useEffect(() => {
+	/* 	useEffect(() => {
 		var prevScrollPosition = window.scrollY;
 		window.onscroll = () => {
 			var currentScrollPos = window.scrollY;
@@ -27,7 +26,7 @@ const MenuBar = ({ elements, selectedId }: MenuBarProps) => {
 			prevScrollPosition = window.scrollY;
 		};
 	});
-
+ */
 	return (
 		<div ref={ref} style={{ backgroundColor: secondary, transition: "top 1s" }} className="w-full sticky top-0 md:flex justify-center pt-3 pb-3 z-50 hidden">
 			<ListMenuElements menuElements={elements} selectedId={selectedId} className="w-4/5 max-w-screen-lg" />

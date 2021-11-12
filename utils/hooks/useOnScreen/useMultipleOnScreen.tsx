@@ -1,6 +1,11 @@
+// Modules
 import React, { useEffect, useState } from "react";
 
-export default function useOnScreen(commonRef: React.MutableRefObject<(HTMLElement | null)[]>) {
+// Definitions
+import { UseOnScreenOptions } from "utils/hooks/useOnScreen/interface";
+
+// Hook
+function useMultipleOnScreen(commonRef: React.MutableRefObject<(HTMLElement | null)[]>, options?: UseOnScreenOptions) {
 	const [intersectingRefs, setIntersectingRefs] = useState<boolean[]>([true]);
 
 	useEffect(() => {
@@ -11,7 +16,7 @@ export default function useOnScreen(commonRef: React.MutableRefObject<(HTMLEleme
 					copyCurrent[i] = entry.isIntersecting;
 					return copyCurrent;
 				});
-			});
+			}, options);
 		});
 
 		observers.forEach((obs, i) => {
@@ -26,3 +31,5 @@ export default function useOnScreen(commonRef: React.MutableRefObject<(HTMLEleme
 
 	return intersectingRefs;
 }
+
+export default useMultipleOnScreen;

@@ -10,7 +10,7 @@ import PageSize from "components/atoms/PageSize/PageSize";
 import MenuBar from "components/organisms/MenuBar/MenuBar";
 
 // Hooks and functions
-import useOnScreen from "utils/hooks/useOnScreen";
+import useMultipleOnScreen from "utils/hooks/useOnScreen/useMultipleOnScreen";
 import convertCmsPageToComponent from "utils/convertCmsPageToComponent";
 
 // Definitions
@@ -35,7 +35,7 @@ export const getStaticProps = async ({ locale, _ }: any): Promise<{ props: HomeP
 // Element
 const Home = ({ content }: HomePageProps) => {
 	const commonRef = useRef<(HTMLElement | null)[]>([]);
-	const visibleRefs = useOnScreen(commonRef);
+	const visibleRefs = useMultipleOnScreen(commonRef, { rootMargin: "-300px" });
 
 	const formattedMenuElements = content.pages.map((page, i) => {
 		return {

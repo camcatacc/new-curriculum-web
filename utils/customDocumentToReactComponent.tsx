@@ -12,21 +12,24 @@ import Paragraph from "components/atoms/Paragraph/Paragraph";
 // Definitions
 import type { Document } from "@contentful/rich-text-types";
 import type { Options } from "@contentful/rich-text-react-renderer";
-import { PropTypes } from "@material-ui/core";
+import type { PropTypes, TypographyVariant } from "@material-ui/core";
 
 export interface CustomDocumentToReactComponentOptions {
 	boldColor?: boolean;
 	marginBottom?: 1 | 2 | 3 | 4 | 6 | 8 | 10;
 	align?: PropTypes.Alignment;
+	variant?: TypographyVariant;
 }
 
 // Function
-function customDocumentToReactComponent(document: Document, { boldColor, marginBottom, align }: CustomDocumentToReactComponentOptions) {
+function customDocumentToReactComponent(document: Document, { boldColor, marginBottom, align, variant }: CustomDocumentToReactComponentOptions) {
 	let options: Options = {
 		renderNode: {
 			[BLOCKS.PARAGRAPH]: (_: any, children: any) => (
 				<div className={marginBottom ? `mb-${marginBottom}` : ""}>
-					<Paragraph align={align}>{children}</Paragraph>
+					<Paragraph variant={variant} align={align}>
+						{children}
+					</Paragraph>
 				</div>
 			)
 		}

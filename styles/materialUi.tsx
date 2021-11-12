@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import { black, darkGrey, primary, secondary, white } from "./customColors";
 
 export const appTheme = createTheme({

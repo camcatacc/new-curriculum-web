@@ -2,7 +2,7 @@
 import React from "react";
 
 // Elements
-import CircularBackground from "components/HOC/withCircularBackground";
+import CircularBackground from "components/atoms/CircularBackground/CircularBackground";
 import { SvgIcon } from "@material-ui/core";
 
 // Styles

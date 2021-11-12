@@ -1,21 +1,14 @@
 // Modules
 import React from "react";
 
-// Elements
-import { Typography } from "@material-ui/core";
-
 // Definitions
 export interface AbilityDescriptionProps {
-	children: any;
+	children: React.ReactNode;
 }
 
 // Element
-const AbilityDescription = ({ children }: AbilityDescriptionProps) => {
-	return (
-		<Typography variant="body2" align="center" className="font-light">
-			{children}
-		</Typography>
-	);
+const AbilityDescription = ({ children }: AbilityDescriptionProps): JSX.Element => {
+	return <>{children}</>;
 };
 
 export default AbilityDescription;
