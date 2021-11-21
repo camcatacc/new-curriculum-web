@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GroupBarAbilities Renders as expected 1`] = `
+<div>
+  <div
+    class="flex flex-col flex-1 gap-4"
+  >
+    <div
+      class="flex-1"
+    >
+      <div
+        class="flex flex-row w-full"
+      >
+        <div
+          class="w-1/4"
+        >
+          <div
+            class="pl-4 pr-4 pt-2 pb-2"
+            style="background-color: red;"
+          >
+            <p
+              class="MuiTypography-root w-full truncate MuiTypography-body1 MuiTypography-alignCenter"
+              style="color: blue;"
+            >
+              bu
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex-1"
+        >
+          <div
+            style="background-color: rgb(226, 226, 226); height: 100%;"
+          >
+            <div
+              class="pr-8 h-full flex flex-col justify-center"
+              style="width: 80%; background-color: yellow; height: 100%;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-alignRight"
+              >
+                80%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex-1"
+    >
+      <div
+        class="flex flex-row w-full"
+      >
+        <div
+          class="w-1/4"
+        >
+          <div
+            class="pl-4 pr-4 pt-2 pb-2"
+            style="background-color: red;"
+          >
+            <p
+              class="MuiTypography-root w-full truncate MuiTypography-body1 MuiTypography-alignCenter"
+              style="color: blue;"
+            >
+              bu
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex-1"
+        >
+          <div
+            style="background-color: rgb(226, 226, 226); height: 100%;"
+          >
+            <div
+              class="pr-8 h-full flex flex-col justify-center"
+              style="width: 21%; background-color: yellow; height: 100%;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-alignRight"
+              >
+                21%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

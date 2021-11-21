@@ -1,0 +1,5 @@
+.linkButton:hover {
+	color: #3ceb93 !important;
+	font-weight: 600 !important;
+	transition: color 0.2s ease-in;
+}

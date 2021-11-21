@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuBar Renders as expected 1`] = `
+<div>
+  <div
+    class="w-full sticky top-0 flex justify-center pt-3 pb-3 z-50"
+    style="background-color: rgb(0, 2, 67);"
+  >
+    <div
+      class="w-screen max-w-screen-xl pl-8 pr-8 md:pl-16 md:pr-16"
+    >
+      <div
+        class="flex-row flex gap-28"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          <a
+            class="MuiTypography-root MuiLink-root MuiLink-underlineHover cursor-pointer linkButton font-regular MuiTypography-colorTextSecondary"
+            href="#"
+            style="color: rgb(255, 255, 255);"
+          >
+            Home
+          </a>
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          <a
+            class="MuiTypography-root MuiLink-root MuiLink-underlineHover cursor-pointer linkButton font-regular MuiTypography-colorTextSecondary"
+            href="#"
+            style="color: rgb(255, 255, 255);"
+          >
+            About
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,28 +1,71 @@
-import type { NextPage } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import React from "react";
-import { MenuElement } from "../components/atoms/MenuElement";
-import { PageSize } from "../components/atoms/PageSize";
-import { MenuBar } from "../components/organisms/MenuBar";
-import { Habilities } from "../components/templates/Habilities";
-import { Presentation } from "../components/templates/Presentation";
+// Modules
+import React, { useRef } from "react";
+import getEntries from "services/cms/contentful";
 
-const Home: NextPage = () => {
-    return (
-        <div className="flex flex-col w-full items-center">
-            <MenuBar />
-            <PageSize>
-                <Presentation className="mb-20" />
-                <Habilities />
-            </PageSize>
-        </div>
-    );
+// Constants
+import { CONTENT_TYPE_INDEX_PAGE } from "interfaces/cms/IndexPage";
+
+// Elements
+import PageSize from "components/atoms/PageSize/PageSize";
+import MenuBar from "components/organisms/MenuBar/MenuBar";
+
+// Hooks and functions
+import useMultipleOnScreen from "utils/hooks/useOnScreen/useMultipleOnScreen";
+import convertCmsPageToComponent from "utils/convertCmsPageToComponent";
+
+// Definitions
+import type { IndexPage } from "interfaces/cms/IndexPage";
+import Layout from "components/container/Layout";
+
+export interface HomePageProps {
+	content: IndexPage;
+}
+
+// nextJS
+export const getStaticProps = async ({ locale, _ }: any): Promise<{ props: HomePageProps }> => {
+	const indexPage = await getEntries<IndexPage>(CONTENT_TYPE_INDEX_PAGE, locale);
+
+	return {
+		props: {
+			content: { ...indexPage }
+		}
+	};
+};
+
+// Element
+const Home = ({ content }: HomePageProps) => {
+	const commonRef = useRef<(HTMLElement | null)[]>([]);
+	const visibleRefs = useMultipleOnScreen(commonRef, { rootMargin: "-300px" });
+
+	const formattedMenuElements = content.pages.map((page, i) => {
+		return {
+			name: page.fields.name,
+			onClick: () => window.scrollTo({ top: (commonRef.current[i]?.getBoundingClientRect().top ?? 0) + window.scrollY - 20, behavior: "smooth" }),
+			id: page.fields.id
+		};
+	});
+
+	const getSelectedId = () => {
+		let id = "";
+		visibleRefs.some((bool, i) => {
+			id = bool ? content.pages[i].fields.id : id;
+			return bool;
+		});
+		return id;
+	};
+
+	return (
+		<Layout>
+			<div className="flex flex-col w-full items-center">
+				<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
+				{content.pages.map((page, i) => (
+					<section key={`page${i}`} className={`w-full flex justify-center ${page.fields.stripe ? "bg-gray-100" : ""}`} ref={(ref) => (commonRef.current[i] = ref)}>
+						<PageSize className="mb-12">{convertCmsPageToComponent(page)}</PageSize>
+					</section>
+				))}
+			</div>
+		</Layout>
+	);
 };
 
 export default Home;
-
-export const getStaticProps = async ({ locale }: any) => ({
-    props: {
-        ...(await serverSideTranslations(locale, ["common", "footer"])),
-    },
-});
