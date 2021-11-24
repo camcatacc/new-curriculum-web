@@ -1,6 +1,11 @@
 // Modules
 import React from "react";
+import { motion } from "framer-motion";
+import { useTheme } from "@material-ui/core";
+
+// Functions
 import customDocumentToReactComponent from "utils/customDocumentToReactComponent";
+import { getMotionFlipVariants } from "utils/getMotionFlipOptions";
 
 // Elements
 import AbilityDescription from "components/atoms/Ability/AbilityDescription";
@@ -13,13 +18,17 @@ export interface AbilityProps {
 	title: string;
 	description: Document;
 	icon: string;
+	animated?: boolean;
+	delay?: number;
 }
 
-// Element
-const Ability = ({ title, description, icon }: AbilityProps) => {
-	const formattedDescription = customDocumentToReactComponent(description, { boldColor: true, align: "center", variant: "body2" });
+// Components
+const Ability = ({ title, description, icon, animated = false, delay }: AbilityProps) => {
+	const theme = useTheme();
+	const formattedDescription = customDocumentToReactComponent(description, { boldColor: true, align: "center", variant: "body2", theme });
+	const variants = getMotionFlipVariants(animated, delay);
 	return (
-		<div className="w-full h-full flex-col flex items-center">
+		<motion.div variants={variants} className="w-full h-full flex-col flex items-center">
 			<div className="md:w-1/5 w-2/5">
 				<AbilityIcon icon={icon} />
 			</div>
@@ -27,7 +36,7 @@ const Ability = ({ title, description, icon }: AbilityProps) => {
 				<AbilityTitle>{title}</AbilityTitle>
 			</div>
 			<AbilityDescription>{formattedDescription}</AbilityDescription>
-		</div>
+		</motion.div>
 	);
 };
 

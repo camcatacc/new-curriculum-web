@@ -7,7 +7,7 @@ import { Typography } from "@material-ui/core";
 import { motion } from "framer-motion";
 
 // Auxiliary functions
-import getMotionFromOutsideOptions from "utils/getMotionFromOutsideOptions";
+import getOnScrollMotionFromOutsideOptions from "utils/getMotionFromOutsideOptions";
 
 // Definitions
 import type { CmsBarAbility } from "interfaces/cms/molecules/BarAbility";
@@ -24,7 +24,7 @@ export interface GroupBarAbilitiesProps {
 
 // Element
 const GroupBarAbilities = ({ abilities, title, titleColor, barColor, fontColor, animated = false, animatedDirection = "fromLeft" }: GroupBarAbilitiesProps) => {
-	const motionOptions = getMotionFromOutsideOptions(animated, animatedDirection);
+	const motionOptions = getOnScrollMotionFromOutsideOptions(animated, animatedDirection);
 	return (
 		<motion.div {...motionOptions} className="flex-1">
 			<div className="mb-5">

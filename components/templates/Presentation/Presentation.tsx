@@ -15,8 +15,8 @@ export interface PresentationProps extends CmsPresentationPage {
 const Presentation = ({ className, title, aboutText, name, surname }: PresentationProps) => {
 	return (
 		<div className={`flex flex-col justify-center ${className}`}>
-			<SectionTitle>{title}</SectionTitle>
-			<About name={name} surname={surname} paragraphsDoc={aboutText} />
+			<SectionTitle animated>{title}</SectionTitle>
+			<About name={name} surname={surname} paragraphsDoc={aboutText} animated />
 		</div>
 	);
 };

@@ -8,14 +8,15 @@ import SectionTitleText from "components/atoms/SectionTitleText/SectionTitleText
 // Definitions
 export interface SectionTitleProps {
 	children: string;
+	animated?: boolean;
 }
 
-// Element
-const SectionTitle = ({ children }: SectionTitleProps) => {
+// Components
+const SectionTitle = ({ children, animated }: SectionTitleProps) => {
 	return (
 		<div className="flex flex-col mt-8 mb-8">
-			<SectionTitleText>{children}</SectionTitleText>
-			<SectionTitleDivider />
+			<SectionTitleText animated={animated}>{children}</SectionTitleText>
+			<SectionTitleDivider animated={animated} />
 		</div>
 	);
 };
