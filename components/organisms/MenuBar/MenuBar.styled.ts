@@ -1,4 +1,5 @@
 import { styled, Switch } from "@material-ui/core";
+import { primary } from "styles/customColors";
 
 export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 	width: 62,
@@ -26,6 +27,7 @@ export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 		backgroundColor: theme.palette.type === "dark" ? "#003892" : "#001e3c",
 		width: 32,
 		height: 32,
+		border: `solid ${primary} 2px`,
 		"&:before": {
 			content: "''",
 			position: "absolute",
