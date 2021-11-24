@@ -1,6 +1,9 @@
 // Modules
 import React from "react";
 
+// Styles
+import * as Styled from "components/atoms/CircularBackground/CircularBackground.styled";
+
 // Definitions
 export interface CircularBackgroundProps {
 	children: React.ReactNode;
@@ -13,17 +16,9 @@ export interface CircularBackgroundProps {
 // Element
 const CircularBackground = ({ children, backgroundColor, height, width, padding }: CircularBackgroundProps) => {
 	return (
-		<div
-			className="rounded-full w-min h-min"
-			style={{
-				backgroundColor: backgroundColor,
-				height: height,
-				width: width,
-				padding: padding
-			}}
-		>
+		<Styled.Container className="rounded-full w-min h-min" backgroundColor={backgroundColor} height={height} width={width} padding={padding}>
 			{children}
-		</div>
+		</Styled.Container>
 	);
 };
 

@@ -2,11 +2,10 @@
 import React from "react";
 
 // Elements
-import { Link, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 // Styles
-import { primary, white } from "styles/customColors";
-import styles from "./MenuElement.module.css";
+import * as Styled from "components/atoms/MenuElement/MenuElement.styled";
 
 // Definitions
 export interface MenuElementProps {
@@ -19,16 +18,15 @@ export interface MenuElementProps {
 // Element
 const MenuElement = ({ selected, onClicked, title, color }: MenuElementProps) => (
 	<Typography variant="body2">
-		<Link
+		<Styled.Link
 			color="textSecondary"
-			style={{
-				color: selected ? primary : color ?? white
-			}}
-			className={`cursor-pointer ${styles.linkButton} ${selected ? "font-semibold" : "font-regular"} uppercase`}
+			$selected={selected}
+			$color={color}
+			className={`cursor-pointer ${selected ? "font-semibold" : "font-regular"} uppercase`}
 			onClick={onClicked}
 		>
 			{title}
-		</Link>
+		</Styled.Link>
 	</Typography>
 );
 

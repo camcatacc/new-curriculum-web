@@ -11,6 +11,9 @@ import { getMotionFromOutsideVariants } from "utils/getMotionFromOutsideOptions"
 import AvatarWithName from "components/molecules/AvatarWithName/AvatarWithName";
 import { motion } from "framer-motion";
 
+// Styles
+import * as Styled from "components/organisms/About/About.styled";
+
 // Definitions
 import type { Document } from "@contentful/rich-text-types";
 
@@ -44,14 +47,14 @@ const About = ({ name, surname, paragraphsDoc, animated = false }: AboutProps) =
 	const imageMotionOptions = getMotionFlipOptions(animated, {});
 
 	return (
-		<div style={{ gap: "10%" }} className="flex flex-col md:flex-row items-center">
-			<motion.div {...imageMotionOptions} style={{ flex: 1 }} className="w-3/5 md:w-auto">
+		<Styled.ParentContainer className="flex flex-col md:flex-row items-center">
+			<Styled.FirstChildContainer {...imageMotionOptions} className="w-3/5 md:w-auto">
 				<AvatarWithName name={name} surname={surname} />
-			</motion.div>
-			<motion.div {...textMotionOptions} style={{ flex: 2 }} className="mt-4 md:mt-0 flex gap-8 flex-col justify-center">
+			</Styled.FirstChildContainer>
+			<Styled.SecondChildContainer {...textMotionOptions} className="mt-4 md:mt-0 flex gap-8 flex-col justify-center">
 				{paragraphs}
-			</motion.div>
-		</div>
+			</Styled.SecondChildContainer>
+		</Styled.ParentContainer>
 	);
 };
 

@@ -1,12 +1,11 @@
 // Modules
 import React from "react";
 
-// Elements
-import { Typography } from "@material-ui/core";
+// Styles
+import * as Styled from "components/atoms/Paragraph/Paragraph.styled";
 
 // Definitions
-import type { PropTypes } from "@material-ui/core";
-import type { TypographyVariant } from "@material-ui/core";
+import type { PropTypes, TypographyVariant } from "@material-ui/core";
 
 export interface ParagraphProps {
 	children: React.ReactNode;
@@ -17,9 +16,9 @@ export interface ParagraphProps {
 // Element
 const Paragraph = ({ children, align = "justify", variant = "body1" }: ParagraphProps) => {
 	return (
-		<Typography variant={variant} align={align} style={{ lineHeight: 2 }}>
+		<Styled.Typography variant={variant} align={align}>
 			{children}
-		</Typography>
+		</Styled.Typography>
 	);
 };
 

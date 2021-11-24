@@ -1,7 +1,12 @@
-import { styled, Switch } from "@material-ui/core";
+import { styled as mUStyled, Switch } from "@material-ui/core";
+import styled from "styled-components";
 import { primary } from "styles/customColors";
 
-export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+export const Container = styled.div<{ secondary: string }>`
+	background-color: ${({ secondary }) => secondary};
+	transition: top 1s;
+`;
+export const MaterialUISwitch = mUStyled(Switch)(({ theme }) => ({
 	width: 62,
 	height: 34,
 	padding: 7,

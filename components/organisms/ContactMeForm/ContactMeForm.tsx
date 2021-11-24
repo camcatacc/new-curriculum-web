@@ -3,6 +3,7 @@ import React from "react";
 
 // Elements
 import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button, TextField, Typography } from "@material-ui/core";
+import ButtonWithState from "components/atoms/ButtonWithState/ButtonWithState";
 
 // Redux
 import { useSelector } from "react-redux";
@@ -26,7 +27,7 @@ import {
 import { ActionCreatorWithPayload } from "@reduxjs/toolkit";
 
 // Styles
-import ButtonWithState from "components/atoms/ButtonWithState/ButtonWithState";
+import * as Styled from "components/organisms/ContactMeForm/ContactMeForm.styled";
 
 // Definitions
 export interface ContactMeFormProps {
@@ -108,9 +109,9 @@ const ContactMeForm = ({ openModal, handleModalClose }: ContactMeFormProps) => {
 				</div>
 			</DialogActions>
 			{error && (
-				<Typography variant="body2" style={{ marginRight: "1rem", marginBottom: "1rem" }} align="right" color="error">
+				<Styled.Error variant="body2" align="right" color="error">
 					{error}
-				</Typography>
+				</Styled.Error>
 			)}
 		</Dialog>
 	);

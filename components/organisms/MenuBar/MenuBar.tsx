@@ -26,10 +26,10 @@ const MenuBar = ({ elements, selectedId }: MenuBarProps) => {
 	const onSwitchChange = (ev: React.ChangeEvent<HTMLInputElement>) => dispatch(switchNightMode(ev.target.checked));
 
 	return (
-		<div ref={ref} style={{ backgroundColor: secondary, transition: "top 1s" }} className="w-full sticky top-0 flex justify-center pt-2 pb-2 z-50">
+		<Styled.Container ref={ref} secondary={secondary} className="w-full sticky top-0 flex justify-center pt-2 pb-2 z-50">
 			<ListMenuElements menuElements={elements} selectedId={selectedId} className="w-4/5 max-w-screen-lg items-center" />
 			<Styled.MaterialUISwitch checked={nightMode} onChange={onSwitchChange} value="nightMode" />
-		</div>
+		</Styled.Container>
 	);
 };
 
