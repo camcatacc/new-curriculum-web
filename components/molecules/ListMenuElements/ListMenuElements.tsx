@@ -30,7 +30,7 @@ export interface ListMenuElementsProps {
 
 // Element
 const ListMenuElements = ({ menuElements, selectedId, className }: ListMenuElementsProps) => {
-	const [isMobile, setIsMobile] = useState(false);
+	const [isMobile, setIsMobile] = useState(true);
 	useEffect(() => {
 		const media = window.matchMedia(`(max-width: 720px)`);
 		setIsMobile(media.matches);

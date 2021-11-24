@@ -71,7 +71,7 @@ const Home = ({ content }: HomePageProps) => {
 	return (
 		<ThemeProvider theme={theme}>
 			<CssBaseline />
-			<Layout>
+			<Layout name={"web"}>
 				<div className="flex flex-col w-full items-center">
 					<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
 					{content.pages.map((page, i) => (

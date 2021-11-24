@@ -6,7 +6,7 @@ import React from "react";
 import Head from "next/head";
 
 // Components
-export default function Layout({ children }: { children: any }) {
+export default function Layout({ children, name }: { children: any; name: string }) {
 	const theme = useTheme();
 	return (
 		<div>
@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: any }) {
 				<meta charSet="utf-8" />
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<title>Curriculum David Camacho Cateura</title>
+				<title>Curriculum {name}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main style={{ background: theme.palette.background.default }}>{children}</main>
