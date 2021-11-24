@@ -2,8 +2,10 @@
 import React from "react";
 
 // Elements
-import { Typography } from "@material-ui/core";
 import { motion } from "framer-motion";
+
+// Styles
+import * as Styled from "components/atoms/BarAbility/Bar.styled";
 
 // Definitions
 import type { Variants } from "framer-motion";
@@ -53,19 +55,11 @@ const Bar = ({ percentage, backgroundColor, fontSize = "1rem", fontColor = "whit
 	const { parentVariants, childVariants } = getMotionOptions(animated, percentage);
 	return (
 		<div className="bg-gray-300 h-full">
-			<motion.div
-				variants={parentVariants}
-				style={{
-					width: `${percentage}%`,
-					backgroundColor,
-					height: "100%"
-				}}
-				className="pr-4 h-full flex flex-col justify-center"
-			>
+			<Styled.ParentContainer $percentage={percentage} $backgroundColor={backgroundColor} variants={parentVariants} className="pr-4 h-full flex flex-col justify-center">
 				<motion.div variants={childVariants}>
-					<Typography variant="body1" align="right" style={{ fontSize: fontSize, color: fontColor }}>{`${percentage}%`}</Typography>
+					<Styled.Typography variant="body1" align="right" fontSize={fontSize} fontcolor={fontColor}>{`${percentage}%`}</Styled.Typography>
 				</motion.div>
-			</motion.div>
+			</Styled.ParentContainer>
 		</div>
 	);
 };

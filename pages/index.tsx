@@ -5,9 +5,18 @@ import getEntries from "services/cms/contentful";
 // Constants
 import { CONTENT_TYPE_INDEX_PAGE } from "interfaces/cms/IndexPage";
 
+// Redux
+import { isNightModeSelector } from "redux/ui/ui";
+import { useSelector } from "react-redux";
+
 // Elements
 import PageSize from "components/atoms/PageSize/PageSize";
 import MenuBar from "components/organisms/MenuBar/MenuBar";
+import Layout from "components/container/Layout";
+
+// Styles
+import { CssBaseline, ThemeProvider } from "@material-ui/core";
+import { getMaterialTheme } from "styles/materialUi";
 
 // Hooks and functions
 import useMultipleOnScreen from "utils/hooks/useOnScreen/useMultipleOnScreen";
@@ -15,7 +24,6 @@ import convertCmsPageToComponent from "utils/convertCmsPageToComponent";
 
 // Definitions
 import type { IndexPage } from "interfaces/cms/IndexPage";
-import Layout from "components/container/Layout";
 
 export interface HomePageProps {
 	content: IndexPage;
@@ -34,9 +42,13 @@ export const getStaticProps = async ({ locale, _ }: any): Promise<{ props: HomeP
 
 // Element
 const Home = ({ content }: HomePageProps) => {
+	const nightMode = useSelector(isNightModeSelector);
 	const commonRef = useRef<(HTMLElement | null)[]>([]);
 	const visibleRefs = useMultipleOnScreen(commonRef, { rootMargin: "-300px" });
 
+	const palletType = nightMode ? "dark" : "light";
+
+	const theme = getMaterialTheme(palletType);
 	const formattedMenuElements = content.pages.map((page, i) => {
 		return {
 			name: page.fields.name,
@@ -44,6 +56,8 @@ const Home = ({ content }: HomePageProps) => {
 			id: page.fields.id
 		};
 	});
+
+	const stripeColor = palletType === "light" ? "bg-gray-100" : "bg-gray-900";
 
 	const getSelectedId = () => {
 		let id = "";
@@ -55,16 +69,19 @@ const Home = ({ content }: HomePageProps) => {
 	};
 
 	return (
-		<Layout>
-			<div className="flex flex-col w-full items-center">
-				<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
-				{content.pages.map((page, i) => (
-					<section key={`page${i}`} className={`w-full flex justify-center ${page.fields.stripe ? "bg-gray-100" : ""}`} ref={(ref) => (commonRef.current[i] = ref)}>
-						<PageSize className="mb-12">{convertCmsPageToComponent(page)}</PageSize>
-					</section>
-				))}
-			</div>
-		</Layout>
+		<ThemeProvider theme={theme}>
+			<CssBaseline />
+			<Layout>
+				<div className="flex flex-col w-full items-center">
+					<MenuBar elements={formattedMenuElements} selectedId={getSelectedId()} />
+					{content.pages.map((page, i) => (
+						<section key={`page${i}`} className={`w-full flex justify-center ${page.fields.stripe ? stripeColor : ""}`} ref={(ref) => (commonRef.current[i] = ref)}>
+							<PageSize className="mb-12">{convertCmsPageToComponent(page)}</PageSize>
+						</section>
+					))}
+				</div>
+			</Layout>
+		</ThemeProvider>
 	);
 };
 

@@ -13,15 +13,16 @@ export interface MenuElementProps {
 	selected: boolean;
 	onClicked: () => void;
 	title: string;
+	color?: string;
 }
 
 // Element
-const MenuElement = ({ selected, onClicked, title }: MenuElementProps) => (
+const MenuElement = ({ selected, onClicked, title, color }: MenuElementProps) => (
 	<Typography variant="body2">
 		<Link
 			color="textSecondary"
 			style={{
-				color: selected ? primary : white
+				color: selected ? primary : color ?? white
 			}}
 			className={`cursor-pointer ${styles.linkButton} ${selected ? "font-semibold" : "font-regular"} uppercase`}
 			onClick={onClicked}

@@ -12,9 +12,10 @@ import Paragraph from "components/atoms/Paragraph/Paragraph";
 // Definitions
 import type { Document } from "@contentful/rich-text-types";
 import type { Options } from "@contentful/rich-text-react-renderer";
-import type { PropTypes, TypographyVariant } from "@material-ui/core";
+import type { PropTypes, Theme, TypographyVariant } from "@material-ui/core";
 
 export interface CustomDocumentToReactComponentOptions {
+	theme?: Theme;
 	boldColor?: boolean;
 	marginBottom?: 1 | 2 | 3 | 4 | 6 | 8 | 10;
 	align?: PropTypes.Alignment;
@@ -22,7 +23,7 @@ export interface CustomDocumentToReactComponentOptions {
 }
 
 // Function
-function customDocumentToReactComponent(document: Document, { boldColor, marginBottom, align, variant }: CustomDocumentToReactComponentOptions) {
+function customDocumentToReactComponent(document: Document, { boldColor, marginBottom, align, variant, theme }: CustomDocumentToReactComponentOptions) {
 	let options: Options = {
 		renderNode: {
 			[BLOCKS.PARAGRAPH]: (_: any, children: any) => (
@@ -37,7 +38,7 @@ function customDocumentToReactComponent(document: Document, { boldColor, marginB
 
 	if (boldColor) {
 		if (!options.renderMark) options = { ...options, renderMark: {} };
-		options.renderMark![MARKS.BOLD] = (text) => <b style={{ color: secondary }}>{text}</b>;
+		options.renderMark![MARKS.BOLD] = (text) => <b style={{ color: theme ? theme.palette.secondary[theme.palette.type] : secondary }}>{text}</b>;
 	}
 
 	return documentToReactComponents(document, options);

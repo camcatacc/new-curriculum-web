@@ -1,12 +1,12 @@
 // Modules
 import React from "react";
+import { useTheme } from "@material-ui/core";
 
 // Elements
 import CircularBackground from "components/atoms/CircularBackground/CircularBackground";
-import { SvgIcon } from "@material-ui/core";
 
 // Styles
-import { primary, secondary } from "styles/customColors";
+import * as Styled from "components/atoms/Ability/AbilityIcon.styled";
 
 // Definitions
 export interface AbilityIconProps {
@@ -14,12 +14,15 @@ export interface AbilityIconProps {
 }
 
 // Element
-const AbilityIcon = ({ icon }: AbilityIconProps) => (
-	<CircularBackground height="100%" width="100%" backgroundColor={secondary} padding="20%">
-		<SvgIcon style={{ color: primary, height: "100%", width: "100%" }}>
-			<path fill="currentColor" d={icon} />
-		</SvgIcon>
-	</CircularBackground>
-);
+const AbilityIcon = ({ icon }: AbilityIconProps) => {
+	const theme = useTheme();
+	return (
+		<CircularBackground height="100%" width="100%" backgroundColor={theme.palette.secondary[theme.palette.type]} padding="20%">
+			<Styled.SvgIcon>
+				<path color={theme.palette.primary[theme.palette.type]} d={icon} />
+			</Styled.SvgIcon>
+		</CircularBackground>
+	);
+};
 
 export default AbilityIcon;

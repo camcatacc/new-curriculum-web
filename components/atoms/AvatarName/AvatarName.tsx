@@ -1,11 +1,9 @@
 // Modules
 import React from "react";
-
-// Elements
-import { Typography } from "@material-ui/core";
+import { useTheme } from "@material-ui/core";
 
 // Styling
-import { secondary } from "styles/customColors";
+import * as Styled from "components/atoms/AvatarName/AvatarName.styled";
 
 // Definitions
 export interface AvatarNameProps {
@@ -15,10 +13,11 @@ export interface AvatarNameProps {
 
 // Element
 const AvatarName = ({ name, surname }: AvatarNameProps) => {
+	const theme = useTheme();
 	return (
-		<Typography variant="h3" align="center" style={{ color: secondary }}>
+		<Styled.Typography variant="h3" align="center" $color={theme.palette.secondary[theme.palette.type]}>
 			{name} {surname}
-		</Typography>
+		</Styled.Typography>
 	);
 };
 

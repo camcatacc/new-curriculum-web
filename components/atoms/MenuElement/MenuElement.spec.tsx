@@ -3,7 +3,7 @@ import React from "react";
 import { fireEvent, render } from "@testing-library/react";
 
 // Elements
-import { MenuElement } from "components/atoms/MenuElement/MenuElement";
+import MenuElement from "components/atoms/MenuElement/MenuElement";
 
 // Styling
 import { primary } from "styles/customColors";
