@@ -3,17 +3,20 @@
 exports[`Bar Renders as expected 1`] = `
 <div>
   <div
-    style="background-color: rgb(226, 226, 226); height: 100%;"
+    class="bg-gray-300 h-full"
   >
     <div
-      class="pr-8 h-full flex flex-col justify-center"
-      style="width: 40%; background-color: red; height: 100%;"
+      class="sc-bdvvtL jGTAWU pr-4 h-full flex flex-col justify-center"
     >
-      <p
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-alignRight"
-      >
-        40%
-      </p>
+      <div>
+        <p
+          class="MuiTypography-root sc-gsDKAQ etFjmY MuiTypography-body1 MuiTypography-alignRight"
+          font-size="1rem"
+          fontcolor="white"
+        >
+          40%
+        </p>
+      </div>
     </div>
   </div>
 </div>

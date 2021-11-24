@@ -2,10 +2,12 @@
 
 exports[`SectionTitleText Renders as expected 1`] = `
 <div>
-  <h2
-    class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter"
-  >
-    Bu
-  </h2>
+  <div>
+    <h2
+      class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+    >
+      Bu
+    </h2>
+  </div>
 </div>
 `;

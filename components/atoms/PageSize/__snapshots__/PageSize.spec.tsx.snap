@@ -3,7 +3,7 @@
 exports[`PageSize Renders as expected 1`] = `
 <div>
   <div
-    class="w-screen max-w-screen-xl pl-8 pr-8 md:pl-16 md:pr-16"
+    class="undefined w-full max-w-screen-xl pl-4 pr-4 md:pl-24 md:pr-24"
   >
     <p>
       Bu

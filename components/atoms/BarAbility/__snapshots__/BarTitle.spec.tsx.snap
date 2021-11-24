@@ -3,14 +3,14 @@
 exports[`BarTitle Renders as expected 1`] = `
 <div>
   <div
-    class="pl-4 pr-4 pt-2 pb-2"
-    style="background-color: red;"
+    class="sc-bdvvtL jJpwjr pl-2 pr-2 pt-1 pb-1"
   >
     <p
-      class="MuiTypography-root w-full truncate MuiTypography-body1 MuiTypography-alignCenter"
-      style="color: white;"
+      class="MuiTypography-root sc-gsDKAQ etnubE w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+      font-size="1rem"
+      fontcolor="white"
     >
-      Hello, hello
+      Testing
     </p>
   </div>
 </div>

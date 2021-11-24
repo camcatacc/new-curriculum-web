@@ -3,18 +3,19 @@
 exports[`AbilityIcon Renders as expected 1`] = `
 <div>
   <div
-    class="rounded-full w-min h-min"
-    style="background-color: rgb(0, 2, 67); height: 100%; width: 100%; padding: 20%;"
+    class="sc-bdvvtL iOVPAM rounded-full w-min h-min"
+    height="100%"
+    width="100%"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root"
+      class="MuiSvgIcon-root sc-gsDKAQ eovcTd"
       focusable="false"
-      style="color: rgb(60, 235, 147); height: 100%; width: 100%;"
       viewBox="0 0 24 24"
     >
       <path
-        d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2 2H5V5h14v14zm0-16H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        color="#7986cb"
+        d="M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z"
       />
     </svg>
   </div>

@@ -3,38 +3,41 @@
 exports[`BarAbility Renders as expected 1`] = `
 <div>
   <div
-    class="flex flex-row w-full"
+    class="flex flex-row justify-center"
   >
     <div
-      class="w-1/4"
+      class="w-40 md:w-32 truncate"
     >
       <div
-        class="pl-4 pr-4 pt-2 pb-2"
-        style="background-color: orange;"
+        class="sc-dkPtRN kLozLK pl-2 pr-2 pt-1 pb-1"
       >
         <p
-          class="MuiTypography-root w-full truncate MuiTypography-body1 MuiTypography-alignCenter"
-          style="color: white;"
+          class="MuiTypography-root sc-hKwDye dsVJSv w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+          font-size="1rem"
+          fontcolor="white"
         >
-          Important ability
+          Cool
         </p>
       </div>
     </div>
     <div
-      class="flex-1"
+      class="w-full md:w-80 "
     >
       <div
-        style="background-color: rgb(226, 226, 226); height: 100%;"
+        class="bg-gray-300 h-full"
       >
         <div
-          class="pr-8 h-full flex flex-col justify-center"
-          style="width: 80%; background-color: red; height: 100%;"
+          class="sc-bdvvtL kOgXaY pr-4 h-full flex flex-col justify-center"
         >
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-alignRight"
-          >
-            80%
-          </p>
+          <div>
+            <p
+              class="MuiTypography-root sc-gsDKAQ etFjmY MuiTypography-body1 MuiTypography-alignRight"
+              font-size="1rem"
+              fontcolor="white"
+            >
+              80%
+            </p>
+          </div>
         </div>
       </div>
     </div>

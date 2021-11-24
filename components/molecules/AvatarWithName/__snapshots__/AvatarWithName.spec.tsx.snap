@@ -3,31 +3,28 @@
 exports[`AvatarWithName Renders as expected 1`] = `
 <div>
   <div
-    class="w-full relative mb-4"
-    style="padding-top: 100%;"
+    class="sc-gsDKAQ mtNEY w-full relative mb-4"
   >
     <div
-      class="MuiAvatar-root MuiAvatar-circular"
-      style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
     >
+      <noscript />
       <img
-        class="MuiAvatar-img"
-        src="/me.jpg"
+        alt="DavidCamacho Cateura"
+        class="absolute top-0 left-0 bottom-0 right-0 rounded-full"
+        data-nimg="true"
+        decoding="async"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
       />
     </div>
   </div>
   <h3
-    class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter"
+    class="MuiTypography-root sc-bdvvtL iytgcZ MuiTypography-h3 MuiTypography-alignCenter"
   >
     David
      
-    <br />
-    <span
-      class="MuiTypography-root leading-loose"
-      style="font-size: smaller;"
-    >
-      Camacho Cateura
-    </span>
+    Camacho Cateura
   </h3>
 </div>
 `;
