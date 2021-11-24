@@ -2,7 +2,7 @@
 import React from "react";
 
 // Elements
-import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button, TextField, Typography, Box, CircularProgress } from "@material-ui/core";
+import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button, TextField, Typography } from "@material-ui/core";
 
 // Redux
 import { useSelector } from "react-redux";
@@ -26,7 +26,6 @@ import {
 import { ActionCreatorWithPayload } from "@reduxjs/toolkit";
 
 // Styles
-import { green } from "@material-ui/core/colors";
 import ButtonWithState from "components/atoms/ButtonWithState/ButtonWithState";
 
 // Definitions
@@ -93,18 +92,20 @@ const ContactMeForm = ({ openModal, handleModalClose }: ContactMeFormProps) => {
 				</div>
 			</DialogContent>
 			<DialogActions>
-				<ButtonWithState variant="text" loading={postStatus === "loading"} disabled={postStatus === "loading"} onClick={() => handleButtonClick("sendWithError")}>
-					Send with error
-				</ButtonWithState>
-				<Button color="secondary" onClick={() => handleButtonClick("cancel")}>
-					Cancel
-				</Button>
-				<Button variant="outlined" color="secondary" onClick={() => handleButtonClick("save")}>
-					Finish it later
-				</Button>
-				<ButtonWithState variant="contained" loading={postStatus === "loading"} disabled={postStatus === "loading"} onClick={() => handleButtonClick("send")}>
-					Send
-				</ButtonWithState>
+				<div className="flex items-center justify-center flex-col md:flex-row w-full md:w-auto">
+					<ButtonWithState variant="text" loading={postStatus === "loading"} disabled={postStatus === "loading"} onClick={() => handleButtonClick("sendWithError")}>
+						Send with error
+					</ButtonWithState>
+					<Button color="secondary" onClick={() => handleButtonClick("cancel")}>
+						Cancel
+					</Button>
+					<Button variant="outlined" color="secondary" onClick={() => handleButtonClick("save")}>
+						Finish it later
+					</Button>
+					<ButtonWithState variant="contained" loading={postStatus === "loading"} disabled={postStatus === "loading"} onClick={() => handleButtonClick("send")}>
+						Send
+					</ButtonWithState>
+				</div>
 			</DialogActions>
 			{error && (
 				<Typography variant="body2" style={{ marginRight: "1rem", marginBottom: "1rem" }} align="right" color="error">
