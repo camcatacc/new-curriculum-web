@@ -32,9 +32,15 @@ export interface ListMenuElementsProps {
 const ListMenuElements = ({ menuElements, selectedId, className }: ListMenuElementsProps) => {
 	const [isMobile, setIsMobile] = useState(false);
 	useEffect(() => {
-		const media = window.matchMedia(`(max-width: 600px)`);
-		media.addEventListener("change", (e) => isMobile !== e.matches && setIsMobile(e.matches));
-	});
+		const media = window.matchMedia(`(max-width: 720px)`);
+		setIsMobile(media.matches);
+		const listener = (e: MediaQueryListEvent) => isMobile !== e.matches && setIsMobile(e.matches);
+		media.addEventListener("change", listener);
+
+		return () => {
+			media.removeEventListener("change", listener);
+		};
+	}, []);
 
 	if (isMobile) return <></>;
 

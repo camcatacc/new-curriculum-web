@@ -24,7 +24,7 @@ const getMotionOptions = (animated?: boolean, delay?: number): MotionProps => {
 		whileInView: "animation",
 		viewport: {
 			once: true,
-			amount: 1
+			amount: 0.5
 		}
 	};
 };
