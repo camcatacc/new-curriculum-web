@@ -5,6 +5,9 @@ import React from "react";
 import Image from "next/image";
 import AvatarName from "components/atoms/AvatarName/AvatarName";
 
+// Styles
+import * as Styled from "components/molecules/AvatarWithName/AvatarWithName.styled";
+
 // Definitions
 export interface AvatarWithNameProps {
 	name: string;
@@ -15,9 +18,9 @@ export interface AvatarWithNameProps {
 const AvatarWithName = ({ name, surname }: AvatarWithNameProps) => {
 	return (
 		<>
-			<div style={{ paddingTop: "100%" }} className="w-full relative mb-4">
-				<Image layout="fill" className="absolute top-0 left-0 bottom-0 right-0 rounded-full" src="/me.jpg" alt="David Camacho Cateura" />
-			</div>
+			<Styled.Container className="w-full relative mb-4">
+				<Image layout="fill" src="/avatar.jpg" alt={name + surname} className="absolute top-0 left-0 bottom-0 right-0 rounded-full" />
+			</Styled.Container>
 			<AvatarName name={name} surname={surname} />
 		</>
 	);
