@@ -3,14 +3,17 @@ import React, { useState } from "react";
 import customDocumentToReactComponent from "utils/customDocumentToReactComponent";
 
 // Elements
-import SectionTitle from "components/molecules/SectionTitle/SectionTitle";
 import { Button } from "@material-ui/core";
+import { motion } from "framer-motion";
+import SectionTitle from "components/molecules/SectionTitle/SectionTitle";
+import ContactMeForm from "components/organisms/ContactMeForm/ContactMeForm";
+
+// Auxiliary functions
+import getOnScrollMotionFromOutsideOptions from "utils/getMotionFromOutsideOptions";
 
 // Definitions
 import type { Document } from "@contentful/rich-text-types";
-import { motion, MotionProps } from "framer-motion";
-import getOnScrollMotionFromOutsideOptions from "utils/getMotionFromOutsideOptions";
-import ContactMeForm from "components/organisms/ContactMeForm/ContactMeForm";
+import type { MotionProps } from "framer-motion";
 
 export interface FindMeProps {
 	text: Document;

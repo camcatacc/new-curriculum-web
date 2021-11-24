@@ -12,7 +12,7 @@ import type { BarTitleProps } from "components/atoms/BarAbility/BarTitle";
 const defaultProps: BarTitleProps = {
 	backgroundColor: "red",
 	fontColor: "white",
-	children: <p>Testing</p>
+	title: "Testing"
 };
 
 // Tests

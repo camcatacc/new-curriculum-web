@@ -1,5 +1,7 @@
 // Modules
 import React, { useRef } from "react";
+
+// Redux
 import { useSelector } from "react-redux";
 import { isNightModeSelector, switchNightMode } from "redux/ui/ui";
 import { useAppDispatch } from "redux/store";

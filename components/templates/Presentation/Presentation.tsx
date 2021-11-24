@@ -4,9 +4,10 @@ import React from "react";
 // Elements
 import SectionTitle from "components/molecules/SectionTitle/SectionTitle";
 import About from "components/organisms/About/About";
-import { CmsPresentationPage } from "interfaces/cms/pages/Presentation";
 
 // Definitions
+import type { CmsPresentationPage } from "interfaces/cms/pages/Presentation";
+
 export interface PresentationProps extends CmsPresentationPage {
 	className?: string;
 }

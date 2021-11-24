@@ -6,7 +6,6 @@ import { Box, Button } from "@material-ui/core";
 
 // Styles
 import * as Styled from "components/atoms/ButtonWithState/ButtonWithState.styled";
-import { green } from "@material-ui/core/colors";
 
 // Definitions
 export interface ButtonWithStateProps {

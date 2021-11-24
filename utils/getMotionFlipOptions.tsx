@@ -1,9 +1,12 @@
+// Definitions
 import type { MotionProps, Variants } from "framer-motion";
 
 export interface GetMotionFlipOptionsOptions {
 	amount?: number;
 	delay?: number;
 }
+
+// Functions
 function getMotionFlipOptions(animated: boolean, { amount, delay }: GetMotionFlipOptionsOptions): MotionProps {
 	if (!animated) return {};
 	const variants = getMotionFlipVariants(animated, delay);

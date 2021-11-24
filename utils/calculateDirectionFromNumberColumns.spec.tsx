@@ -1,5 +1,7 @@
+// Functions
 import calculateDirectionFromNumberColumns from "utils/calculateDirectionFromNumberColumns";
 
+// Tests
 describe("To return the correct value if total and numPerRow are 3", () => {
 	it("i=1, total=3, numPerRow=3", () => {
 		expect(calculateDirectionFromNumberColumns(1, 3, 3)).toBe("fromLeft");

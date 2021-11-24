@@ -1,6 +1,5 @@
 // Modules
 import React from "react";
-import { motion } from "framer-motion";
 import { useTheme } from "@material-ui/core";
 
 // Functions
@@ -11,6 +10,7 @@ import { getMotionFlipVariants } from "utils/getMotionFlipOptions";
 import AbilityDescription from "components/atoms/Ability/AbilityDescription";
 import AbilityIcon from "components/atoms/Ability/AbilityIcon";
 import AbilityTitle from "components/atoms/Ability/AbilityTitle";
+import { motion } from "framer-motion";
 
 // Definitions
 import type { Document } from "@contentful/rich-text-types";

@@ -9,7 +9,6 @@ import { getMotionFromOutsideVariants } from "utils/getMotionFromOutsideOptions"
 
 // Elements
 import AvatarWithName from "components/molecules/AvatarWithName/AvatarWithName";
-import { motion } from "framer-motion";
 
 // Styles
 import * as Styled from "components/organisms/About/About.styled";
@@ -17,7 +16,6 @@ import * as Styled from "components/organisms/About/About.styled";
 // Definitions
 import type { Document } from "@contentful/rich-text-types";
 
-// Functions
 export interface AboutProps {
 	name: string;
 	surname: string;
@@ -25,6 +23,7 @@ export interface AboutProps {
 	animated?: boolean;
 }
 
+// Functions
 const getTextMotionOptions = (animated?: boolean) => {
 	if (!animated) return {};
 	const { initial, animation } = getMotionFromOutsideVariants("fromRight");

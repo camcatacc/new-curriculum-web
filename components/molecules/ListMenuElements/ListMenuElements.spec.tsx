@@ -10,9 +10,11 @@ import type { ListMenuElementsProps } from "components/molecules/ListMenuElement
 
 // Mocks
 const onClickMock = jest.fn();
+
 // Default Props
 const defaultProps: ListMenuElementsProps = {
-	menuElements: [{ name: "Home", onClick: onClickMock }]
+	menuElements: [{ name: "Home", onClick: onClickMock, id: "home>" }],
+	selectedId: "home"
 };
 
 // Tests

@@ -3,8 +3,10 @@ import React from "react";
 
 // Elements
 import { Typography } from "@material-ui/core";
-import { getMotionFromOutsideVariants } from "utils/getMotionFromOutsideOptions";
 import { motion } from "framer-motion";
+
+// Auxiliary Functions
+import { getMotionFromOutsideVariants } from "utils/getMotionFromOutsideOptions";
 
 // Definitions
 import type { MotionProps } from "framer-motion";

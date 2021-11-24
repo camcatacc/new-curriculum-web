@@ -4,15 +4,16 @@ import React from "react";
 // Elements
 import Abilities from "components/templates/Abilities/Abilities";
 import Presentation from "components/templates/Presentation/Presentation";
+import FindMe from "components/templates/FindMe/FindMe";
 
 // Definitions
 import type { ContentfulEntry } from "interfaces/cms/contentful";
 import type { CmsPage } from "interfaces/cms/pages/Page";
 import type { CmsPresentationPage } from "interfaces/cms/pages/Presentation";
 import type { CmsAbilitiesPage } from "interfaces/cms/pages/Abilities";
-import { CmsFindMePage } from "interfaces/cms/pages/FindMe";
-import FindMe from "components/templates/FindMe/FindMe";
+import type { CmsFindMePage } from "interfaces/cms/pages/FindMe";
 
+// Functions
 const convertCmsPageToComponent = (page: ContentfulEntry<CmsPage>) => {
 	switch (page.fields.type) {
 		case "PresentationPage":

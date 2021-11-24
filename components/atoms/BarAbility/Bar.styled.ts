@@ -1,9 +1,9 @@
 // Modules
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 // Elements
 import { Typography as MaterialTypography } from "@material-ui/core";
+import { motion } from "framer-motion";
 
 // Components
 export const ParentContainer = styled(motion.div)<{ $percentage: number; $backgroundColor: string }>`

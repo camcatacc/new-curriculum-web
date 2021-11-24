@@ -1,6 +1,9 @@
+// Definitions
 import type { MotionProps, Variants } from "framer-motion";
 
 export type AnimatedDirection = "fromLeft" | "fromRight" | "fromBottom";
+
+// Functions
 export function getOnScrollMotionFromOutsideOptions(animated: boolean, animatedDirection: AnimatedDirection, delay?: number): MotionProps {
 	if (!animated) return {};
 

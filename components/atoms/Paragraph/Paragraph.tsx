@@ -13,7 +13,7 @@ export interface ParagraphProps {
 	variant?: TypographyVariant;
 }
 
-// Element
+// Component
 const Paragraph = ({ children, align = "justify", variant = "body1" }: ParagraphProps) => {
 	return (
 		<Styled.Typography variant={variant} align={align}>

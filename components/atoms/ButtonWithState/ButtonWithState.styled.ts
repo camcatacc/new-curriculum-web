@@ -1,7 +1,13 @@
-import { CircularProgress } from "@material-ui/core";
-import { green } from "@material-ui/core/colors";
+// Modules
 import styled from "styled-components";
 
+// Elements
+import { CircularProgress } from "@material-ui/core";
+
+// Styling
+import { green } from "@material-ui/core/colors";
+
+// Components
 export const Progress = styled(CircularProgress)`
 	color: ${green[500]};
 	position: absolute;

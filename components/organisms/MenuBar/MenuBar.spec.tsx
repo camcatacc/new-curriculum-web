@@ -11,9 +11,10 @@ import type { MenuBarProps } from "components/organisms/MenuBar/MenuBar";
 // Default Props
 const defaultProps: MenuBarProps = {
 	elements: [
-		{ name: "Home", onClick: jest.fn() },
-		{ name: "About", onClick: jest.fn() }
-	]
+		{ name: "Home", onClick: jest.fn(), id: "home" },
+		{ name: "About", onClick: jest.fn(), id: "about" }
+	],
+	selectedId: "home"
 };
 
 // Tests

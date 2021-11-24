@@ -10,10 +10,10 @@ import type { BarAbilityProps } from "components/molecules/BarAbility/BarAbility
 
 // Default Props
 const defaultProps: BarAbilityProps = {
-	barStyle: { backgroundColor: "red" },
 	percentage: 80,
-	title: "Important ability",
-	titleStyle: { backgroundColor: "orange", fontColor: "white" }
+	barColor: "red",
+	name: "Cool",
+	titleColor: "white"
 };
 
 // Tests

@@ -1,11 +1,18 @@
-import { styled as mUStyled, Switch } from "@material-ui/core";
+// Modules
 import styled from "styled-components";
+
+// Elements
+import { styled as mUStyled, Switch } from "@material-ui/core";
+
+// Styles
 import { primary } from "styles/customColors";
 
+// Components
 export const Container = styled.div<{ secondary: string }>`
 	background-color: ${({ secondary }) => secondary};
 	transition: top 1s;
 `;
+
 export const MaterialUISwitch = mUStyled(Switch)(({ theme }) => ({
 	width: 62,
 	height: 34,

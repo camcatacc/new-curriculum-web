@@ -11,9 +11,12 @@ import type { GroupBarAbilitiesProps } from "components/organisms/GroupBarAbilit
 // Default Props
 const defaultProps: GroupBarAbilitiesProps = {
 	abilities: [
-		{ barStyle: { backgroundColor: "red" }, percentage: 80, title: "Important ability", titleStyle: { backgroundColor: "orange", fontColor: "white" } },
-		{ barStyle: { backgroundColor: "blue" }, percentage: 21, title: "Important ability 2", titleStyle: { backgroundColor: "yellow", fontColor: "black" } }
-	]
+		{ percentage: 80, name: "Cool" },
+		{ percentage: 80, name: "Cool 2" }
+	],
+	barColor: "white",
+	title: "Coolest abilities",
+	titleColor: "red"
 };
 
 // Tests

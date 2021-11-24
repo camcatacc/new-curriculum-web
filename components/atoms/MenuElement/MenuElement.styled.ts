@@ -7,6 +7,7 @@ import { Link as MaterialLink } from "@material-ui/core";
 // Styles
 import { primary } from "styles/customColors";
 
+// Components
 export const Link = styled(MaterialLink)<{ $selected: boolean; $color?: string }>`
 	color: ${({ $selected, $color }) => ($selected ? primary : $color ?? "white")};
 	:hover {
