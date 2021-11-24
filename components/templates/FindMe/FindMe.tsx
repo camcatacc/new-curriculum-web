@@ -30,7 +30,8 @@ const buttonMotionOptions: MotionProps = {
 };
 
 const MotionButton = motion(
-	React.forwardRef((props, ref) => (
+	// eslint-disable-next-line react/display-name
+	React.forwardRef((props: { onClick: () => void }, ref) => (
 		<Button {...props} ref={ref as any} color="secondary" variant="contained">
 			CONTACT ME
 		</Button>
@@ -52,7 +53,7 @@ const FindMe = ({ text, title }: FindMeProps) => {
 			<motion.div {...motionOptions}>{formattedText}</motion.div>
 			<motion.div className="flex mt-8 justify-center">
 				<div>
-					<MotionButton {...buttonMotionOptions} onTap={onContactMeClick} />
+					<MotionButton {...buttonMotionOptions} onClick={onContactMeClick} />
 				</div>
 			</motion.div>
 		</div>
