@@ -1,10 +1,13 @@
+// Redux modules
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState, UI } from "redux/types";
 
-const initialState: UI = {
+// Initial State
+export const initialState: UI = {
 	nightMode: false
 };
 
+// Slice
 export const uiSlice = createSlice({
 	name: "UI",
 	initialState,
@@ -15,8 +18,11 @@ export const uiSlice = createSlice({
 	}
 });
 
+// Actions
 export const { switchNightMode } = uiSlice.actions;
 
+// Selectors
 export const isNightModeSelector = (state: RootState) => state.ui.nightMode;
 
+// Default reducer export
 export default uiSlice.reducer;

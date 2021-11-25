@@ -8,7 +8,15 @@ export interface UI {
 }
 
 export interface Contact {
-	form: { name: string; surname: string; email: string; messageSubject: string; messageBody: string };
+	form: EmailForm;
 	status?: "loading" | "succeeded" | "failed";
 	error?: string;
+}
+
+export interface EmailForm {
+	name: string;
+	surname: string;
+	email: string;
+	messageSubject: string;
+	messageBody: string;
 }

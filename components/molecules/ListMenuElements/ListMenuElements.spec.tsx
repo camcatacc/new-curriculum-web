@@ -19,6 +19,22 @@ const defaultProps: ListMenuElementsProps = {
 
 // Tests
 describe("ListMenuElements", () => {
+	beforeAll(() => {
+		Object.defineProperty(window, "matchMedia", {
+			writable: true,
+			value: jest.fn().mockImplementation((query) => ({
+				matches: false,
+				media: query,
+				onchange: null,
+				addListener: jest.fn(), // Deprecated
+				removeListener: jest.fn(), // Deprecated
+				addEventListener: jest.fn(),
+				removeEventListener: jest.fn(),
+				dispatchEvent: jest.fn()
+			}))
+		});
+	});
+
 	it("Renders as expected", () => {
 		const { container } = render(<ListMenuElements {...defaultProps} />);
 		expect(container).toMatchSnapshot();

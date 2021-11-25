@@ -1,6 +1,8 @@
 // Modules
 import React from "react";
-import { render } from "@testing-library/react";
+
+// Testing modules
+import { customRender } from "utils/tests";
 
 // Elements
 import MenuBar from "components/organisms/MenuBar/MenuBar";
@@ -19,8 +21,23 @@ const defaultProps: MenuBarProps = {
 
 // Tests
 describe("MenuBar", () => {
-	it("Renders as expected", () => {
-		const { container } = render(<MenuBar {...defaultProps} />);
+	beforeAll(() => {
+		Object.defineProperty(window, "matchMedia", {
+			writable: true,
+			value: jest.fn().mockImplementation((query) => ({
+				matches: false,
+				media: query,
+				onchange: null,
+				addListener: jest.fn(), // Deprecated
+				removeListener: jest.fn(), // Deprecated
+				addEventListener: jest.fn(),
+				removeEventListener: jest.fn(),
+				dispatchEvent: jest.fn()
+			}))
+		});
+	});
+	it("Renders as expected if width > 720", () => {
+		const { container } = customRender(<MenuBar {...defaultProps} />);
 		expect(container).toMatchSnapshot();
 	});
 });
