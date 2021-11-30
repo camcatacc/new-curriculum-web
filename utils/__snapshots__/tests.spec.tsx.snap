@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customRender snapshots customRender with dark mode 1`] = `
+<div>
+  <p>
+    Custom Render
+  </p>
+</div>
+`;
+
+exports[`customRender snapshots customRender with light mode 1`] = `
+<div>
+  <p>
+    Custom Render
+  </p>
+</div>
+`;

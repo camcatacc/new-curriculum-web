@@ -47,15 +47,6 @@ const MotionButton = motion(
 	))
 );
 
-// Default Props
-const defaultForm = {
-	name: "",
-	surname: "",
-	email: "",
-	messageSubject: "",
-	messageBody: ""
-};
-
 // Element
 const FindMe = ({ text, title }: FindMeProps) => {
 	const [openModal, setOpenModal] = useState(false);
@@ -73,7 +64,7 @@ const FindMe = ({ text, title }: FindMeProps) => {
 		dispatch(updateForm(copiedForm));
 	}
 
-	function onButtonClick(type: ContactFormButtonType) {
+	async function onButtonClick(type: ContactFormButtonType) {
 		switch (type) {
 			case "cancel":
 				dispatch(emptyContact());
@@ -83,10 +74,11 @@ const FindMe = ({ text, title }: FindMeProps) => {
 				handleModalClose();
 				return;
 			case "send":
-				dispatch(sendEmail());
+				await dispatch(sendEmail());
+				handleModalClose();
 				return;
 			case "sendWithError":
-				dispatch(sendEmail({ error: true }));
+				await dispatch(sendEmail({ error: true }));
 				return;
 		}
 	}

@@ -20,7 +20,7 @@ export const sendEmail = createAsyncThunk<void, { error?: boolean } | undefined,
 		return rejectWithValue("This request fails after one second");
 	}
 	const form = (getState() as RootState).contact.form;
-	await sendEmailApi(form).catch((err: Error) => rejectWithValue(err.message));
+	return sendEmailApi(form).catch((err: Error) => rejectWithValue(err.message));
 });
 
 // Slice

@@ -1,0 +1,466 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FindMe On Button click, the modal is opened and its content is rendered well 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Find Me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          Do you want to work on a project with me or have any kind of doubt?
+        </p>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          You can find me in 
+          <a
+            href="mailto:contact@gmail.com"
+          >
+            contact@gmail.com
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex mt-8 justify-center"
+    >
+      <div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            CONTACT ME
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FindMe On Form Change... On Form Change, if SAVE button is pressed, values are saved 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Find Me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          Do you want to work on a project with me or have any kind of doubt?
+        </p>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          You can find me in 
+          <a
+            href="mailto:contact@gmail.com"
+          >
+            contact@gmail.com
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex mt-8 justify-center"
+    >
+      <div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            CONTACT ME
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FindMe On Form Change... On Form Change, if SEND WITH ERROR button is pressed, an error appears 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Find Me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          Do you want to work on a project with me or have any kind of doubt?
+        </p>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          You can find me in 
+          <a
+            href="mailto:contact@gmail.com"
+          >
+            contact@gmail.com
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex mt-8 justify-center"
+    >
+      <div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            CONTACT ME
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FindMe On Form Change... On Form Change, if SEND button is pressed and the request succeeds, the modal is closed 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Find Me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          Do you want to work on a project with me or have any kind of doubt?
+        </p>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          You can find me in 
+          <a
+            href="mailto:contact@gmail.com"
+          >
+            contact@gmail.com
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex mt-8 justify-center"
+    >
+      <div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            CONTACT ME
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FindMe On Form Change... On Form Change, if cancel button is pressed, values are not saved 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Find Me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          Do you want to work on a project with me or have any kind of doubt?
+        </p>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          You can find me in 
+          <a
+            href="mailto:contact@gmail.com"
+          >
+            contact@gmail.com
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex mt-8 justify-center"
+    >
+      <div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            CONTACT ME
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FindMe On Form Change... On Form Change, values change 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Find Me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          Do you want to work on a project with me or have any kind of doubt?
+        </p>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          You can find me in 
+          <a
+            href="mailto:contact@gmail.com"
+          >
+            contact@gmail.com
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex mt-8 justify-center"
+    >
+      <div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            CONTACT ME
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FindMe Snapshot and accessibility tests 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Find Me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          Do you want to work on a project with me or have any kind of doubt?
+        </p>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignCenter"
+        >
+          You can find me in 
+          <a
+            href="mailto:contact@gmail.com"
+          >
+            contact@gmail.com
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex mt-8 justify-center"
+    >
+      <div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            CONTACT ME
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

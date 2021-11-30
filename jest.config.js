@@ -3,9 +3,12 @@ module.exports = {
 		"components/**/*.{js,jsx,ts,tsx}",
 		"pages/**/*.{js,jsx,ts,tsx}",
 		"!pages/_app.tsx",
+		"!pages/_document.tsx",
 		"redux/**/*.{js,jsx,ts,tsx}",
 		"services/**/*.{js,jsx,ts,tsx}",
 		"utils/**/*.{js,jsx,ts,tsx}",
+		"!utils/createEmotionCache.ts",
+		"!utils/hooks/**/*.{ts,tsx}",
 		"!**/*.d.ts"
 	],
 	moduleNameMapper: {

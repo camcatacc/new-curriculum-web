@@ -1,0 +1,612 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Abilities Snapshot and accessibility tests 1`] = `
+<div>
+  <div
+    class="md:min-h-screen"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          Abilities
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div
+      class="flex flex-1 flex-col md:gap-20 gap-14"
+    >
+      <div
+        class="grid md:gap-x-12 gap-y-10 grid-cols-2 md:grid-cols-3 gap-x-4"
+      >
+        <div
+          class="w-full h-full flex-col flex items-center"
+        >
+          <div
+            class="md:w-1/5 w-2/5"
+          >
+            <div
+              class="sc-bdvvtL gnQPDc rounded-full relative flex"
+              data-testid="container"
+              height="100%"
+              width="100%"
+            >
+              <div
+                class="h-full flex justify-center items-center"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root sc-gsDKAQ fRMNeN"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    color="#3CEB93"
+                    d="M18 2C17.1 2 16 3 16 4H8C8 3 6.9 2 6 2H2V11C2 12 3 13 4 13H6.2C6.6 15 7.9 16.7 11 17V19.08C8 19.54 8 22 8 22H16C16 22 16 19.54 13 19.08V17C16.1 16.7 17.4 15 17.8 13H20C21 13 22 12 22 11V2H18M6 11H4V4H6V11M20 11H18V4H20V11Z"
+                  />
+                </svg>
+              </div>
+              <div
+                style="margin-top: 100%;"
+              />
+            </div>
+          </div>
+          <div
+            class="mt-4 mb-2"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter"
+            >
+              Perfectionist
+            </h3>
+          </div>
+          <div>
+            <p
+              class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body2 MuiTypography-alignCenter"
+            >
+              From responsive designs to error absence, nothing is irrelevant.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full h-full flex-col flex items-center"
+        >
+          <div
+            class="md:w-1/5 w-2/5"
+          >
+            <div
+              class="sc-bdvvtL gnQPDc rounded-full relative flex"
+              data-testid="container"
+              height="100%"
+              width="100%"
+            >
+              <div
+                class="h-full flex justify-center items-center"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root sc-gsDKAQ fRMNeN"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    color="#3CEB93"
+                    d="M11 6H14L17.29 2.7A1 1 0 0 1 18.71 2.7L21.29 5.29A1 1 0 0 1 21.29 6.7L19 9H11V11A1 1 0 0 1 10 12A1 1 0 0 1 9 11V8A2 2 0 0 1 11 6M5 11V15L2.71 17.29A1 1 0 0 0 2.71 18.7L5.29 21.29A1 1 0 0 0 6.71 21.29L11 17H15A1 1 0 0 0 16 16V15H17A1 1 0 0 0 18 14V13H19A1 1 0 0 0 20 12V11H13V12A2 2 0 0 1 11 14H9A2 2 0 0 1 7 12V9Z"
+                  />
+                </svg>
+              </div>
+              <div
+                style="margin-top: 100%;"
+              />
+            </div>
+          </div>
+          <div
+            class="mt-4 mb-2"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter"
+            >
+              Agile Team Player
+            </h3>
+          </div>
+          <div>
+            <p
+              class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body2 MuiTypography-alignCenter"
+            >
+              I know and apply 
+              <b>
+                Agile methodologies
+              </b>
+               and consider teamworking of utmost importance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-row gap-x-32 gap-y-10 flex-wrap justify-center"
+      >
+        <div
+          class="flex-1"
+        >
+          <div
+            class="mb-5"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter"
+            >
+              Web
+            </h3>
+          </div>
+          <div
+            class="flex flex-col gap-3"
+          >
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    HTML
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye bsCiNx pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        80%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    CSS
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye bsCiNx pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        80%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    JavaScript
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        90%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    TypeScript
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        90%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    React
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        90%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    Angular
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye rZHVm pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        30%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-1"
+        >
+          <div
+            class="mb-5"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter"
+            >
+              Mobile
+            </h3>
+          </div>
+          <div
+            class="flex flex-col gap-3"
+          >
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    React Native
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye fJmpVR pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        90%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    Flutter
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye ivjyLL pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        70%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    Ionic
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye fLoBNS pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        60%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    Android Dev.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye glwMMt pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        50%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-center"
+            >
+              <div
+                class="w-40 md:w-32 truncate"
+              >
+                <div
+                  class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                >
+                  <p
+                    class="MuiTypography-root sc-gKclnd flksqq w-full truncate MuiTypography-body2 MuiTypography-alignCenter"
+                    font-size="1rem"
+                    fontcolor="white"
+                  >
+                    iOS Dev.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-80 "
+              >
+                <div
+                  class="bg-gray-300 h-full"
+                >
+                  <div
+                    class="sc-hKwDye glwMMt pr-4 h-full flex flex-col justify-center"
+                  >
+                    <div>
+                      <p
+                        class="MuiTypography-root sc-eCImPb DUHjf MuiTypography-body1 MuiTypography-alignRight"
+                        font-size="1rem"
+                        fontcolor="white"
+                      >
+                        50%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

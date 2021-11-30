@@ -1,0 +1,2251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Snapshot and accessibility tests 1`] = `
+<div>
+  <div>
+    <main
+      style="background: rgb(250, 250, 250);"
+    >
+      <div
+        class="flex flex-col w-full items-center"
+      >
+        <div
+          class="sc-bqiRlB hrBlBa w-full sticky top-0 flex justify-center pt-2 pb-2 z-50"
+        >
+          <div
+            class="w-4/5 max-w-screen-lg items-center flex-row flex gap-28"
+          >
+            <p
+              class="MuiTypography-root-26 MuiTypography-body2-27"
+            >
+              <a
+                class="MuiTypography-root-26 MuiLink-root-107 MuiLink-underlineHover-109 sc-furwcr bvqqpU cursor-pointer font-semibold uppercase MuiTypography-colorTextSecondary-52"
+                href="#"
+              >
+                Presentation
+              </a>
+            </p>
+            <p
+              class="MuiTypography-root-26 MuiTypography-body2-27"
+            >
+              <a
+                class="MuiTypography-root-26 MuiLink-root-107 MuiLink-underlineHover-109 sc-furwcr kfSgoR cursor-pointer font-regular uppercase MuiTypography-colorTextSecondary-52"
+                href="#"
+              >
+                Abilities
+              </a>
+            </p>
+            <p
+              class="MuiTypography-root-26 MuiTypography-body2-27"
+            >
+              <a
+                class="MuiTypography-root-26 MuiLink-root-107 MuiLink-underlineHover-109 sc-furwcr kfSgoR cursor-pointer font-regular uppercase MuiTypography-colorTextSecondary-52"
+                href="#"
+              >
+                Find me
+              </a>
+            </p>
+          </div>
+          <span
+            class="MuiSwitch-root-3 WithStyles(ForwardRef(Switch))-root-1 WithStyles(ForwardRef(Switch))-root-2"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root-25 MuiIconButton-root-17 PrivateSwitchBase-root-13 MuiSwitch-switchBase-6 MuiSwitch-colorSecondary-8"
+            >
+              <span
+                class="MuiIconButton-label-24"
+              >
+                <input
+                  aria-label="Night Mode switch"
+                  class="PrivateSwitchBase-input-16 MuiSwitch-input-10"
+                  type="checkbox"
+                  value="nightMode"
+                />
+                <span
+                  class="MuiSwitch-thumb-11"
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root-112"
+              />
+            </span>
+            <span
+              class="MuiSwitch-track-12"
+            />
+          </span>
+        </div>
+        <section
+          class="w-full flex justify-center "
+        >
+          <div
+            class="mb-12 w-full max-w-screen-xl pl-4 pr-4 md:pl-24 md:pr-24"
+          >
+            <div
+              class="flex flex-col justify-center undefined"
+            >
+              <div
+                class="flex flex-col mt-8 mb-8"
+              >
+                <div>
+                  <h2
+                    class="MuiTypography-root-26 uppercase MuiTypography-h2-32 MuiTypography-alignCenter-42"
+                  >
+                    About me
+                  </h2>
+                </div>
+                <div
+                  class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+                />
+              </div>
+              <div
+                class="sc-kDTinF iQGOnz flex flex-col md:flex-row items-center"
+              >
+                <div
+                  class="sc-iqseJM iVBSQY w-3/5 md:w-auto"
+                >
+                  <div
+                    class="sc-jrQzAO CEymC w-full relative mb-4"
+                  >
+                    <img
+                      alt="JohanPérez Draghi"
+                      class="absolute top-0 left-0 bottom-0 right-0 rounded-full"
+                      src="/avatar.jpg"
+                    />
+                  </div>
+                  <h3
+                    class="MuiTypography-root-26 sc-dkPtRN uHNAI MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                  >
+                    Johan
+                     
+                    Pérez Draghi
+                  </h3>
+                </div>
+                <div
+                  class="sc-crHmcD fHBznV mt-4 md:mt-0 flex gap-8 flex-col justify-center"
+                >
+                  <div>
+                    <p
+                      class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body1-28 MuiTypography-alignJustify-44"
+                    >
+                      I am a 
+                      <b
+                        style="color: rgb(0, 2, 67);"
+                      >
+                        commited
+                      </b>
+                      , capable and resolutive person. I have skills, experience and formation as a 
+                      <b
+                        style="color: rgb(0, 2, 67);"
+                      >
+                        developer
+                      </b>
+                      , which are very well complemented by my 
+                      <b
+                        style="color: rgb(0, 2, 67);"
+                      >
+                        business background
+                      </b>
+                      .
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body1-28 MuiTypography-alignJustify-44"
+                    >
+                      I led an educational robotics and programming firm for five years. I devoted the last one and a half to ideate, design and develop an 
+                      <b
+                        style="color: rgb(0, 2, 67);"
+                      >
+                        online solution in the form of a hybrid app
+                      </b>
+                       and a web platform. 
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body1-28 MuiTypography-alignJustify-44"
+                    >
+                      I am currently employed by Accenture as a 
+                      <b
+                        style="color: rgb(0, 2, 67);"
+                      >
+                        full-stack developer
+                      </b>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-full flex justify-center bg-gray-100"
+        >
+          <div
+            class="mb-12 w-full max-w-screen-xl pl-4 pr-4 md:pl-24 md:pr-24"
+          >
+            <div
+              class="md:min-h-screen"
+            >
+              <div
+                class="flex flex-col mt-8 mb-8"
+              >
+                <div>
+                  <h2
+                    class="MuiTypography-root-26 uppercase MuiTypography-h2-32 MuiTypography-alignCenter-42"
+                  >
+                    Abilities
+                  </h2>
+                </div>
+                <div
+                  class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+                />
+              </div>
+              <div
+                class="flex flex-1 flex-col md:gap-20 gap-14"
+              >
+                <div
+                  class="grid md:gap-x-12 gap-y-10 grid-cols-2 md:grid-cols-3 gap-x-4"
+                >
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL gnQPDc rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-56 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#3CEB93"
+                              d="M18 2C17.1 2 16 3 16 4H8C8 3 6.9 2 6 2H2V11C2 12 3 13 4 13H6.2C6.6 15 7.9 16.7 11 17V19.08C8 19.54 8 22 8 22H16C16 22 16 19.54 13 19.08V17C16.1 16.7 17.4 15 17.8 13H20C21 13 22 12 22 11V2H18M6 11H4V4H6V11M20 11H18V4H20V11Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Perfectionist
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                      >
+                        From responsive designs to error absence, nothing is irrelevant.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL gnQPDc rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-56 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#3CEB93"
+                              d="M11 6H14L17.29 2.7A1 1 0 0 1 18.71 2.7L21.29 5.29A1 1 0 0 1 21.29 6.7L19 9H11V11A1 1 0 0 1 10 12A1 1 0 0 1 9 11V8A2 2 0 0 1 11 6M5 11V15L2.71 17.29A1 1 0 0 0 2.71 18.7L5.29 21.29A1 1 0 0 0 6.71 21.29L11 17H15A1 1 0 0 0 16 16V15H17A1 1 0 0 0 18 14V13H19A1 1 0 0 0 20 12V11H13V12A2 2 0 0 1 11 14H9A2 2 0 0 1 7 12V9Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Agile Team Player
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                      >
+                        I know and apply 
+                        <b>
+                          Agile methodologies
+                        </b>
+                         and consider teamworking of utmost importance.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL gnQPDc rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-56 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#3CEB93"
+                              d="M9,5A4,4 0 0,1 13,9A4,4 0 0,1 9,13A4,4 0 0,1 5,9A4,4 0 0,1 9,5M9,15C11.67,15 17,16.34 17,19V21H1V19C1,16.34 6.33,15 9,15M16.76,5.36C18.78,7.56 18.78,10.61 16.76,12.63L15.08,10.94C15.92,9.76 15.92,8.23 15.08,7.05L16.76,5.36M20.07,2C24,6.05 23.97,12.11 20.07,16L18.44,14.37C21.21,11.19 21.21,6.65 18.44,3.63L20.07,2Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Comunicative
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                      >
+                        Be it in Catalan, Spanish or English, I have good communication skills.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL gnQPDc rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-56 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#3CEB93"
+                              d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Passion for learning
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                      >
+                        I love learning and I do it with ease. Any challenge is welcome!
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL gnQPDc rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-56 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#3CEB93"
+                              d="M9,5A4,4 0 0,1 13,9A4,4 0 0,1 9,13A4,4 0 0,1 5,9A4,4 0 0,1 9,5M9,15C11.67,15 17,16.34 17,19V21H1V19C1,16.34 6.33,15 9,15M16.76,5.36C18.78,7.56 18.78,10.61 16.76,12.63L15.08,10.94C15.92,9.76 15.92,8.23 15.08,7.05L16.76,5.36M20.07,2C24,6.05 23.97,12.11 20.07,16L18.44,14.37C21.21,11.19 21.21,6.65 18.44,3.63L20.07,2Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Comunicative
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                      >
+                        Be it in Catalan, Spanish or English, I have good communication skills.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL gnQPDc rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-56 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#3CEB93"
+                              d="M11 6H14L17.29 2.7A1 1 0 0 1 18.71 2.7L21.29 5.29A1 1 0 0 1 21.29 6.7L19 9H11V11A1 1 0 0 1 10 12A1 1 0 0 1 9 11V8A2 2 0 0 1 11 6M5 11V15L2.71 17.29A1 1 0 0 0 2.71 18.7L5.29 21.29A1 1 0 0 0 6.71 21.29L11 17H15A1 1 0 0 0 16 16V15H17A1 1 0 0 0 18 14V13H19A1 1 0 0 0 20 12V11H13V12A2 2 0 0 1 11 14H9A2 2 0 0 1 7 12V9Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Agile Team Player
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                      >
+                        I know and apply 
+                        <b>
+                          Agile methodologies
+                        </b>
+                         and consider teamworking of utmost importance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-row gap-x-32 gap-y-10 flex-wrap justify-center"
+                >
+                  <div
+                    class="flex-1"
+                  >
+                    <div
+                      class="mb-5"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Web
+                      </h3>
+                    </div>
+                    <div
+                      class="flex flex-col gap-3"
+                    >
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              HTML
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bsCiNx pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  80%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              CSS
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bsCiNx pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  80%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              JavaScript
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              TypeScript
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              React
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Angular
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye rZHVm pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  30%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex-1"
+                  >
+                    <div
+                      class="mb-5"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Mobile
+                      </h3>
+                    </div>
+                    <div
+                      class="flex flex-col gap-3"
+                    >
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              React Native
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye fJmpVR pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Flutter
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye ivjyLL pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  70%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Ionic
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye fLoBNS pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  60%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Android Dev.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye glwMMt pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  50%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              iOS Dev.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye glwMMt pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  50%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex-1"
+                  >
+                    <div
+                      class="mb-5"
+                    >
+                      <h3
+                        class="MuiTypography-root-26 MuiTypography-h3-33 MuiTypography-alignCenter-42"
+                      >
+                        Backend
+                      </h3>
+                    </div>
+                    <div
+                      class="flex flex-col gap-3"
+                    >
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg bA-dWyP pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-26 sc-gKclnd flksqq w-full truncate MuiTypography-body2-27 MuiTypography-alignCenter-42"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Node.js
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bDdqEn pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-26 sc-eCImPb DUHjf MuiTypography-body1-28 MuiTypography-alignRight-43"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  70%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-full flex justify-center "
+        >
+          <div
+            class="mb-12 w-full max-w-screen-xl pl-4 pr-4 md:pl-24 md:pr-24"
+          >
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="flex flex-col mt-8 mb-8"
+              >
+                <div>
+                  <h2
+                    class="MuiTypography-root-26 uppercase MuiTypography-h2-32 MuiTypography-alignCenter-42"
+                  >
+                    Find me
+                  </h2>
+                </div>
+                <div
+                  class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+                />
+              </div>
+              <div>
+                <div>
+                  <p
+                    class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body1-28 MuiTypography-alignCenter-42"
+                  >
+                    Do you want to work on a project with me or have any kind of doubt?
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="MuiTypography-root-26 sc-pVTFL ctltIR MuiTypography-body1-28 MuiTypography-alignCenter-42"
+                  >
+                    You can find me in 
+                    <a
+                      href="mailto:contact@gmail.com"
+                    >
+                      contact@gmail.com
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex mt-8 justify-center"
+              >
+                <div>
+                  <button
+                    class="MuiButtonBase-root-25 MuiButton-root-80 MuiButton-contained-88 MuiButton-containedSecondary-90"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label-81"
+                    >
+                      CONTACT ME
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root-112"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+`;
+
+exports[`Home Snapshot and accessibility tests after switch to dark mode 1`] = `
+<div>
+  <div>
+    <main
+      style="background: rgb(48, 48, 48);"
+    >
+      <div
+        class="flex flex-col w-full items-center"
+      >
+        <div
+          class="sc-bqiRlB hrBlBa w-full sticky top-0 flex justify-center pt-2 pb-2 z-50"
+        >
+          <div
+            class="w-4/5 max-w-screen-lg items-center flex-row flex gap-28"
+          >
+            <p
+              class="MuiTypography-root-243 MuiTypography-body2-244"
+            >
+              <a
+                class="MuiTypography-root-243 MuiLink-root-273 MuiLink-underlineHover-275 sc-furwcr bvqqpU cursor-pointer font-semibold uppercase MuiTypography-colorTextSecondary-269"
+                href="#"
+              >
+                Presentation
+              </a>
+            </p>
+            <p
+              class="MuiTypography-root-243 MuiTypography-body2-244"
+            >
+              <a
+                class="MuiTypography-root-243 MuiLink-root-273 MuiLink-underlineHover-275 sc-furwcr kfSgoR cursor-pointer font-regular uppercase MuiTypography-colorTextSecondary-269"
+                href="#"
+              >
+                Abilities
+              </a>
+            </p>
+            <p
+              class="MuiTypography-root-243 MuiTypography-body2-244"
+            >
+              <a
+                class="MuiTypography-root-243 MuiLink-root-273 MuiLink-underlineHover-275 sc-furwcr kfSgoR cursor-pointer font-regular uppercase MuiTypography-colorTextSecondary-269"
+                href="#"
+              >
+                Find me
+              </a>
+            </p>
+          </div>
+          <span
+            class="MuiSwitch-root-280 WithStyles(ForwardRef(Switch))-root-278 WithStyles(ForwardRef(Switch))-root-279"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root-302 MuiIconButton-root-294 PrivateSwitchBase-root-290 MuiSwitch-switchBase-283 MuiSwitch-colorSecondary-285 PrivateSwitchBase-checked-291 Mui-checked"
+            >
+              <span
+                class="MuiIconButton-label-301"
+              >
+                <input
+                  aria-label="Night Mode switch"
+                  class="PrivateSwitchBase-input-293 MuiSwitch-input-287"
+                  type="checkbox"
+                  value="nightMode"
+                />
+                <span
+                  class="MuiSwitch-thumb-288"
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root-303"
+              />
+            </span>
+            <span
+              class="MuiSwitch-track-289"
+            />
+          </span>
+        </div>
+        <section
+          class="w-full flex justify-center "
+        >
+          <div
+            class="mb-12 w-full max-w-screen-xl pl-4 pr-4 md:pl-24 md:pr-24"
+          >
+            <div
+              class="flex flex-col justify-center undefined"
+            >
+              <div
+                class="flex flex-col mt-8 mb-8"
+              >
+                <div>
+                  <h2
+                    class="MuiTypography-root-243 uppercase MuiTypography-h2-249 MuiTypography-alignCenter-259"
+                  >
+                    About me
+                  </h2>
+                </div>
+                <div
+                  class="self-center border-b-2 border-white border-solid w-20 mt-4 mb-4"
+                />
+              </div>
+              <div
+                class="sc-kDTinF iQGOnz flex flex-col md:flex-row items-center"
+              >
+                <div
+                  class="sc-iqseJM iVBSQY w-3/5 md:w-auto"
+                >
+                  <div
+                    class="sc-jrQzAO CEymC w-full relative mb-4"
+                  >
+                    <img
+                      alt="JohanPérez Draghi"
+                      class="absolute top-0 left-0 bottom-0 right-0 rounded-full"
+                      src="/avatar.jpg"
+                    />
+                  </div>
+                  <h3
+                    class="MuiTypography-root-243 sc-dkPtRN jiHGms MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                  >
+                    Johan
+                     
+                    Pérez Draghi
+                  </h3>
+                </div>
+                <div
+                  class="sc-crHmcD fHBznV mt-4 md:mt-0 flex gap-8 flex-col justify-center"
+                >
+                  <div>
+                    <p
+                      class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body1-245 MuiTypography-alignJustify-261"
+                    >
+                      I am a 
+                      <b
+                        style="color: rgb(60, 235, 147);"
+                      >
+                        commited
+                      </b>
+                      , capable and resolutive person. I have skills, experience and formation as a 
+                      <b
+                        style="color: rgb(60, 235, 147);"
+                      >
+                        developer
+                      </b>
+                      , which are very well complemented by my 
+                      <b
+                        style="color: rgb(60, 235, 147);"
+                      >
+                        business background
+                      </b>
+                      .
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body1-245 MuiTypography-alignJustify-261"
+                    >
+                      I led an educational robotics and programming firm for five years. I devoted the last one and a half to ideate, design and develop an 
+                      <b
+                        style="color: rgb(60, 235, 147);"
+                      >
+                        online solution in the form of a hybrid app
+                      </b>
+                       and a web platform. 
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body1-245 MuiTypography-alignJustify-261"
+                    >
+                      I am currently employed by Accenture as a 
+                      <b
+                        style="color: rgb(60, 235, 147);"
+                      >
+                        full-stack developer
+                      </b>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-full flex justify-center bg-gray-900"
+        >
+          <div
+            class="mb-12 w-full max-w-screen-xl pl-4 pr-4 md:pl-24 md:pr-24"
+          >
+            <div
+              class="md:min-h-screen"
+            >
+              <div
+                class="flex flex-col mt-8 mb-8"
+              >
+                <div>
+                  <h2
+                    class="MuiTypography-root-243 uppercase MuiTypography-h2-249 MuiTypography-alignCenter-259"
+                  >
+                    Abilities
+                  </h2>
+                </div>
+                <div
+                  class="self-center border-b-2 border-white border-solid w-20 mt-4 mb-4"
+                />
+              </div>
+              <div
+                class="flex flex-1 flex-col md:gap-20 gap-14"
+              >
+                <div
+                  class="grid md:gap-x-12 gap-y-10 grid-cols-2 md:grid-cols-3 gap-x-4"
+                >
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL hfhWFI rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-313 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#000243"
+                              d="M18 2C17.1 2 16 3 16 4H8C8 3 6.9 2 6 2H2V11C2 12 3 13 4 13H6.2C6.6 15 7.9 16.7 11 17V19.08C8 19.54 8 22 8 22H16C16 22 16 19.54 13 19.08V17C16.1 16.7 17.4 15 17.8 13H20C21 13 22 12 22 11V2H18M6 11H4V4H6V11M20 11H18V4H20V11Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Perfectionist
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                      >
+                        From responsive designs to error absence, nothing is irrelevant.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL hfhWFI rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-313 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#000243"
+                              d="M11 6H14L17.29 2.7A1 1 0 0 1 18.71 2.7L21.29 5.29A1 1 0 0 1 21.29 6.7L19 9H11V11A1 1 0 0 1 10 12A1 1 0 0 1 9 11V8A2 2 0 0 1 11 6M5 11V15L2.71 17.29A1 1 0 0 0 2.71 18.7L5.29 21.29A1 1 0 0 0 6.71 21.29L11 17H15A1 1 0 0 0 16 16V15H17A1 1 0 0 0 18 14V13H19A1 1 0 0 0 20 12V11H13V12A2 2 0 0 1 11 14H9A2 2 0 0 1 7 12V9Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Agile Team Player
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                      >
+                        I know and apply 
+                        <b>
+                          Agile methodologies
+                        </b>
+                         and consider teamworking of utmost importance.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL hfhWFI rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-313 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#000243"
+                              d="M9,5A4,4 0 0,1 13,9A4,4 0 0,1 9,13A4,4 0 0,1 5,9A4,4 0 0,1 9,5M9,15C11.67,15 17,16.34 17,19V21H1V19C1,16.34 6.33,15 9,15M16.76,5.36C18.78,7.56 18.78,10.61 16.76,12.63L15.08,10.94C15.92,9.76 15.92,8.23 15.08,7.05L16.76,5.36M20.07,2C24,6.05 23.97,12.11 20.07,16L18.44,14.37C21.21,11.19 21.21,6.65 18.44,3.63L20.07,2Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Comunicative
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                      >
+                        Be it in Catalan, Spanish or English, I have good communication skills.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL hfhWFI rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-313 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#000243"
+                              d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Passion for learning
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                      >
+                        I love learning and I do it with ease. Any challenge is welcome!
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL hfhWFI rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-313 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#000243"
+                              d="M9,5A4,4 0 0,1 13,9A4,4 0 0,1 9,13A4,4 0 0,1 5,9A4,4 0 0,1 9,5M9,15C11.67,15 17,16.34 17,19V21H1V19C1,16.34 6.33,15 9,15M16.76,5.36C18.78,7.56 18.78,10.61 16.76,12.63L15.08,10.94C15.92,9.76 15.92,8.23 15.08,7.05L16.76,5.36M20.07,2C24,6.05 23.97,12.11 20.07,16L18.44,14.37C21.21,11.19 21.21,6.65 18.44,3.63L20.07,2Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Comunicative
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                      >
+                        Be it in Catalan, Spanish or English, I have good communication skills.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full flex-col flex items-center"
+                  >
+                    <div
+                      class="md:w-1/5 w-2/5"
+                    >
+                      <div
+                        class="sc-bdvvtL hfhWFI rounded-full relative flex"
+                        data-testid="container"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          class="h-full flex justify-center items-center"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root-313 sc-gsDKAQ fRMNeN"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              color="#000243"
+                              d="M11 6H14L17.29 2.7A1 1 0 0 1 18.71 2.7L21.29 5.29A1 1 0 0 1 21.29 6.7L19 9H11V11A1 1 0 0 1 10 12A1 1 0 0 1 9 11V8A2 2 0 0 1 11 6M5 11V15L2.71 17.29A1 1 0 0 0 2.71 18.7L5.29 21.29A1 1 0 0 0 6.71 21.29L11 17H15A1 1 0 0 0 16 16V15H17A1 1 0 0 0 18 14V13H19A1 1 0 0 0 20 12V11H13V12A2 2 0 0 1 11 14H9A2 2 0 0 1 7 12V9Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          style="margin-top: 100%;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 mb-2"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Agile Team Player
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                      >
+                        I know and apply 
+                        <b>
+                          Agile methodologies
+                        </b>
+                         and consider teamworking of utmost importance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-row gap-x-32 gap-y-10 flex-wrap justify-center"
+                >
+                  <div
+                    class="flex-1"
+                  >
+                    <div
+                      class="mb-5"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Web
+                      </h3>
+                    </div>
+                    <div
+                      class="flex flex-col gap-3"
+                    >
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              HTML
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bsCiNx pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  80%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              CSS
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bsCiNx pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  80%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              JavaScript
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              TypeScript
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              React
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bQgcro pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg lobqhD pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Angular
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye rZHVm pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  30%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex-1"
+                  >
+                    <div
+                      class="mb-5"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Mobile
+                      </h3>
+                    </div>
+                    <div
+                      class="flex flex-col gap-3"
+                    >
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              React Native
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye fJmpVR pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Flutter
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye ivjyLL pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  70%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Ionic
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye fLoBNS pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  60%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Android Dev.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye glwMMt pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  50%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg efprcS pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              iOS Dev.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye glwMMt pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  50%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex-1"
+                  >
+                    <div
+                      class="mb-5"
+                    >
+                      <h3
+                        class="MuiTypography-root-243 MuiTypography-h3-250 MuiTypography-alignCenter-259"
+                      >
+                        Backend
+                      </h3>
+                    </div>
+                    <div
+                      class="flex flex-col gap-3"
+                    >
+                      <div
+                        class="flex flex-row justify-center"
+                      >
+                        <div
+                          class="w-40 md:w-32 truncate"
+                        >
+                          <div
+                            class="sc-jRQBWg bA-dWyP pl-2 pr-2 pt-1 pb-1"
+                          >
+                            <p
+                              class="MuiTypography-root-243 sc-gKclnd flksqq w-full truncate MuiTypography-body2-244 MuiTypography-alignCenter-259"
+                              font-size="1rem"
+                              fontcolor="white"
+                            >
+                              Node.js
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="w-full md:w-80 "
+                        >
+                          <div
+                            class="bg-gray-300 h-full"
+                          >
+                            <div
+                              class="sc-hKwDye bDdqEn pr-4 h-full flex flex-col justify-center"
+                            >
+                              <div>
+                                <p
+                                  class="MuiTypography-root-243 sc-eCImPb DUHjf MuiTypography-body1-245 MuiTypography-alignRight-260"
+                                  font-size="1rem"
+                                  fontcolor="white"
+                                >
+                                  70%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-full flex justify-center "
+        >
+          <div
+            class="mb-12 w-full max-w-screen-xl pl-4 pr-4 md:pl-24 md:pr-24"
+          >
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="flex flex-col mt-8 mb-8"
+              >
+                <div>
+                  <h2
+                    class="MuiTypography-root-243 uppercase MuiTypography-h2-249 MuiTypography-alignCenter-259"
+                  >
+                    Find me
+                  </h2>
+                </div>
+                <div
+                  class="self-center border-b-2 border-white border-solid w-20 mt-4 mb-4"
+                />
+              </div>
+              <div>
+                <div>
+                  <p
+                    class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body1-245 MuiTypography-alignCenter-259"
+                  >
+                    Do you want to work on a project with me or have any kind of doubt?
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="MuiTypography-root-243 sc-pVTFL ctltIR MuiTypography-body1-245 MuiTypography-alignCenter-259"
+                  >
+                    You can find me in 
+                    <a
+                      href="mailto:contact@gmail.com"
+                    >
+                      contact@gmail.com
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex mt-8 justify-center"
+              >
+                <div>
+                  <button
+                    class="MuiButtonBase-root-302 MuiButton-root-337 MuiButton-contained-345 MuiButton-containedSecondary-347"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label-338"
+                    >
+                      CONTACT ME
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root-303"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+`;

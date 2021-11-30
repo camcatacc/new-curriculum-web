@@ -21,7 +21,7 @@ function getEntries<T>(ctUid: string, locale: string, extraParams: GetEntriesPar
 	return client
 		.getEntries({ content_type: ctUid, locale, include: 9, ...params })
 		.then((res: ContentfulResponse<T>) => res.items[0].fields)
-		.catch((err: any) => console.error(err));
+		.catch((err: Error) => console.error(err.message));
 }
 
 export default getEntries;

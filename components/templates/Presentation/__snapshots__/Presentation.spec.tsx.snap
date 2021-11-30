@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Presentation Snapshot and accessibility tests 1`] = `
+<div>
+  <div
+    class="flex flex-col justify-center undefined"
+  >
+    <div
+      class="flex flex-col mt-8 mb-8"
+    >
+      <div>
+        <h2
+          class="MuiTypography-root uppercase MuiTypography-h2 MuiTypography-alignCenter"
+        >
+          About me
+        </h2>
+      </div>
+      <div
+        class="self-center border-b-2 border-black border-solid w-20 mt-4 mb-4"
+      />
+    </div>
+    <div
+      class="sc-kDTinF iQGOnz flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="sc-iqseJM iVBSQY w-3/5 md:w-auto"
+      >
+        <div
+          class="sc-jrQzAO CEymC w-full relative mb-4"
+        >
+          <img
+            alt="DavidCamacho"
+            class="absolute top-0 left-0 bottom-0 right-0 rounded-full"
+            src="/avatar.jpg"
+          />
+        </div>
+        <h3
+          class="MuiTypography-root sc-dkPtRN uHNAI MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          David
+           
+          Camacho
+        </h3>
+      </div>
+      <div
+        class="sc-crHmcD fHBznV mt-4 md:mt-0 flex gap-8 flex-col justify-center"
+      >
+        <div>
+          <p
+            class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignJustify"
+          >
+            I am a 
+            <b
+              style="color: rgb(0, 2, 67);"
+            >
+              commited
+            </b>
+            , capable and resolutive person. I have skills, experience and formation as a 
+            <b
+              style="color: rgb(0, 2, 67);"
+            >
+              developer
+            </b>
+            , which are very well complemented by my 
+            <b
+              style="color: rgb(0, 2, 67);"
+            >
+              business background
+            </b>
+            .
+          </p>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignJustify"
+          >
+            I led an educational robotics and programming firm for five years. I devoted the last one and a half to ideate, design and develop an 
+            <b
+              style="color: rgb(0, 2, 67);"
+            >
+              online solution in the form of a hybrid app
+            </b>
+             and a web platform. 
+          </p>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root sc-pVTFL ctltIR MuiTypography-body1 MuiTypography-alignJustify"
+          >
+            I am currently employed by Accenture as a 
+            <b
+              style="color: rgb(0, 2, 67);"
+            >
+              full-stack developer
+            </b>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

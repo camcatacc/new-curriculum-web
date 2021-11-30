@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Snapshot and accessibility tests 1`] = `
+<div>
+  <div>
+    <main
+      style="background: rgb(250, 250, 250);"
+    >
+      <p>
+        This is the children component
+      </p>
+    </main>
+  </div>
+</div>
+`;

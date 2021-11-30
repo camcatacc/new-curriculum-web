@@ -57,8 +57,17 @@ describe("contact slice", () => {
 				});
 				const dispatch = jest.fn().mockResolvedValue("");
 				const getState = jest.fn().mockReturnValue(defaultTestRootState);
+				const errorAsyncFunc = sendEmail({ error: true });
 				const asyncFunc = sendEmail();
 
+				it("Intentional error", async () => {
+					const result = await errorAsyncFunc(dispatch, getState, {});
+					expect(result.meta.requestStatus).toEqual("rejected");
+
+					const action = { type: sendEmail.rejected.type };
+					const state = contactReducer(initialState, action);
+					expect(state.status).toBe("failed");
+				});
 				it("Successful", async () => {
 					const result = await asyncFunc(dispatch, getState, {});
 					expect(result.meta.requestStatus).toEqual("fulfilled");
@@ -72,9 +81,7 @@ describe("contact slice", () => {
 					expect(state.status).toBe("loading");
 				});
 				it("Failed", async () => {
-					mockedEmailService.mockReset().mockImplementation(() => {
-						throw new Error("Not working");
-					});
+					mockedEmailService.mockReset().mockImplementation(() => Promise.reject("Error"));
 					const result = await asyncFunc(dispatch, getState, {});
 					expect(result.meta.requestStatus).toEqual("rejected");
 

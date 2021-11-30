@@ -51,9 +51,15 @@ const Home = ({ content }: HomePageProps) => {
 
 	const theme = getMaterialTheme(palletType);
 	const formattedMenuElements = content.pages.map((page, i) => {
+		/* istanbul ignore next */
+		const top = commonRef.current[i]?.getBoundingClientRect().top ?? 0;
 		return {
 			name: page.fields.name,
-			onClick: () => window.scrollTo({ top: (commonRef.current[i]?.getBoundingClientRect().top ?? 0) + window.scrollY - 20, behavior: "smooth" }),
+			onClick: () =>
+				window.scrollTo({
+					top: top + window.scrollY - 20,
+					behavior: "smooth"
+				}),
 			id: page.fields.id
 		};
 	});
@@ -63,6 +69,7 @@ const Home = ({ content }: HomePageProps) => {
 	const getSelectedId = () => {
 		let id = "";
 		visibleRefs.some((bool, i) => {
+			/* istanbul ignore next */
 			id = bool ? content.pages[i].fields.id : id;
 			return bool;
 		});
