@@ -11,6 +11,14 @@ module.exports = {
 		"!utils/hooks/**/*.{ts,tsx}",
 		"!**/*.d.ts"
 	],
+	coverageThreshold: {
+		global: {
+			branches: 100,
+			functions: 100,
+			lines: 100,
+			statements: 100
+		}
+	},
 	moduleNameMapper: {
 		/* Handle CSS imports (with CSS modules)
       https://jestjs.io/docs/webpack#mocking-css-modules */

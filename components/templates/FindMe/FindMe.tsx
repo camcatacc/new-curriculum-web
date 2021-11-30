@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import customDocumentToReactComponent from "utils/customDocumentToReactComponent";
 
 // Elements
-import { Button } from "@material-ui/core";
+import { Button, useTheme } from "@material-ui/core";
 import { motion } from "framer-motion";
 import { SectionTitle, ContactMeForm, ContactForm, ContactFormButtonType } from "@camcatacc/curriculum-web-components";
 
@@ -50,6 +50,7 @@ const MotionButton = motion(
 // Element
 const FindMe = ({ text, title }: FindMeProps) => {
 	const [openModal, setOpenModal] = useState(false);
+	const theme = useTheme();
 
 	const form = useSelector(formSelector);
 	const postStatus = useSelector(postStatusSelector);
@@ -90,7 +91,7 @@ const FindMe = ({ text, title }: FindMeProps) => {
 		setOpenModal(false);
 	}
 
-	const formattedText = customDocumentToReactComponent(text, { boldColor: true, align: "center" });
+	const formattedText = customDocumentToReactComponent(text, { boldColor: true, align: "center", theme: theme });
 
 	return (
 		<div className="flex flex-col">

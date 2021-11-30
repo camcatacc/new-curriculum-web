@@ -14,6 +14,7 @@ import { fireEvent } from "@testing-library/dom";
 
 // APIs to be mocked
 import emailService from "services/api/email";
+import { act } from "@testing-library/react";
 
 // Accessibility extension
 expect.extend(toHaveNoViolations);
@@ -174,13 +175,15 @@ describe("FindMe", () => {
 			const { container, findByRole, findByText } = renderComponent();
 
 			const modalButton = await findByRole("button");
-
 			fireEvent.click(modalButton);
 
 			const sendButton = await findByText("Send");
 			fireEvent.click(sendButton);
 
-			await new Promise((resolve) => setTimeout(resolve, 500));
+			await act(async () => {
+				await new Promise((resolve) => setTimeout(resolve, 500));
+			});
+
 			expect(sendButton).not.toBeInTheDocument();
 			expect(container).toMatchSnapshot();
 		});

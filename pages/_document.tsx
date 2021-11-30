@@ -9,8 +9,6 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					{/* PWA primary color */}
-					<meta name="theme-color" />
 					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 				</Head>
 				<body>
@@ -64,7 +62,7 @@ MyDocument.getInitialProps = async (ctx) => {
 	// This is important. It prevents emotion to render invalid HTML.
 	// See https://github.com/mui-org/material-ui/issues/26561#issuecomment-855286153
 	const emotionStyles = extractCriticalToChunks(initialProps.html);
-	const emotionStyleTags = emotionStyles.styles.map((style: { key: React.Key | null | undefined; ids: any[]; css: any }) => (
+	const emotionStyleTags = emotionStyles.styles.map((style: any) => (
 		<style
 			data-emotion={`${style.key} ${style.ids.join(" ")}`}
 			key={style.key}
