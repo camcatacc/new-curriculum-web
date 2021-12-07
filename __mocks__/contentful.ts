@@ -1,7 +1,7 @@
 // Definitions
 import type { ContentfulResponse } from "interfaces/cms/contentful";
 
-export function createClient(params: { space: string; accessToken: string }) {
+export function createClient(_: { space: string; accessToken: string }) {
 	async function getEntries(props: { [key: string]: any }): Promise<ContentfulResponse<any>> {
 		if (props.content_type === "error") {
 			throw new Error("Error");

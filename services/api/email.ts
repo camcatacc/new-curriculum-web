@@ -1,5 +1,5 @@
 // Constants
-const GET_FORM_ENDPOINT = "https://getform.io/f/3bbec83c-4fda-4829-9cf7-75e8c61ae4cb";
+const GET_FORM_ENDPOINT = process.env.GET_FORM_ENDPOINT!;
 
 // Redux
 import { EmailForm } from "redux/types";

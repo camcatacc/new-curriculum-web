@@ -11,7 +11,7 @@ This package uses the components from [@camcatacc/curriculum-web-components](htt
 ## Installation
 
 1. Run the command `npm install`.
-2. A file named `.env.local` needs to be added with the `CONTENTFUL_ACCESS_TOKEN`
+2. A file named `.env.local` needs to be added with the `CONTENTFUL_ACCESS_TOKEN` and the `GET_FORM_ENDPOINT`
 
 ## Start it
 
