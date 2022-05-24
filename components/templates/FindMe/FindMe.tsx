@@ -78,9 +78,6 @@ const FindMe = ({ text, title }: FindMeProps) => {
 				await dispatch(sendEmail());
 				handleModalClose();
 				return;
-			case "sendWithError":
-				await dispatch(sendEmail({ error: true }));
-				return;
 		}
 	}
 
