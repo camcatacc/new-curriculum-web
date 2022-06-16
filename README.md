@@ -6,7 +6,7 @@ This website has been designed using React, NextJS, a headless CMS (Contentful) 
 
 ## Components
 
-This package uses the components from [@camcatacc/curriculum-web-components](https://www.npmjs.com/package/@camcatacc/curriculum-web-components).
+This package uses the components from [@hardru/curriculum-web-components](https://www.npmjs.com/package/@hardru/curriculum-web-components).
 
 ## Installation
 

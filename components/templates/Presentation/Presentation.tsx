@@ -3,7 +3,7 @@ import React from "react";
 import { useTheme } from "@material-ui/core";
 
 // Elements
-import { SectionTitle, About } from "@camcatacc/curriculum-web-components";
+import { SectionTitle, About } from "@hardru/curriculum-web-components";
 
 // Auxiliary Functions
 import customDocumentToReactComponent from "utils/customDocumentToReactComponent";

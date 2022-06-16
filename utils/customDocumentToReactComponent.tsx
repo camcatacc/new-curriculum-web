@@ -7,7 +7,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { secondary } from "styles/customColors";
 
 // Elements
-import { Paragraph } from "@camcatacc/curriculum-web-components";
+import { Paragraph } from "@hardru/curriculum-web-components";
 
 // Definitions
 import type { Document } from "@contentful/rich-text-types";

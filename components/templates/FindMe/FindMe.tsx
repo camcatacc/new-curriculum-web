@@ -5,7 +5,7 @@ import customDocumentToReactComponent from "utils/customDocumentToReactComponent
 // Elements
 import { Button, useTheme } from "@material-ui/core";
 import { motion } from "framer-motion";
-import { SectionTitle, ContactMeForm, ContactForm, ContactFormButtonType } from "@camcatacc/curriculum-web-components";
+import { SectionTitle, ContactMeForm, ContactForm, ContactFormButtonType } from "@hardru/curriculum-web-components";
 
 // Redux
 import { useSelector } from "react-redux";

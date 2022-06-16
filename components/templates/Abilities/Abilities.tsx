@@ -2,7 +2,7 @@
 import React from "react";
 
 // Elements
-import { SectionTitle, GroupAbilities, GroupBarAbilities, AbilityProps, BarAbilityProps } from "@camcatacc/curriculum-web-components";
+import { SectionTitle, GroupAbilities, GroupBarAbilities, AbilityProps, BarAbilityProps } from "@hardru/curriculum-web-components";
 import { CmsGroupBarAbilities } from "interfaces/cms/organisms/GroupBarAbilities/GroupBarAbilities";
 
 // Auxiliary functions

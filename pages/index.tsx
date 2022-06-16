@@ -12,7 +12,7 @@ import { useAppDispatch } from "redux/store";
 
 // Elements
 import Layout from "components/containers/Layout";
-import { MenuBar, PageSize } from "@camcatacc/curriculum-web-components";
+import { MenuBar, PageSize } from "@hardru/curriculum-web-components";
 
 // Styles
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
