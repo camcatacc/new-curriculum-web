@@ -12,14 +12,16 @@ import * as Styled from "components/molecules/AvatarWithName/AvatarWithName.styl
 export interface AvatarWithNameProps {
 	name: string;
 	surname: string;
+	imageSrc: string;
 }
 
 // Element
-const AvatarWithName = ({ name, surname }: AvatarWithNameProps) => {
+const AvatarWithName = ({ name, surname, imageSrc }: AvatarWithNameProps) => {
+	let modifiedImageSrc = imageSrc.replace("//", "https://");
 	return (
 		<>
 			<Styled.Container className="w-full relative mb-4">
-				<Image layout="fill" src="/avatar.jpg" alt={name + surname} className="absolute top-0 left-0 bottom-0 right-0 rounded-full" />
+				<Image layout="fill" src={modifiedImageSrc} alt={name + surname} className="absolute top-0 left-0 bottom-0 right-0 rounded-full" />
 			</Styled.Container>
 			<AvatarName name={name} surname={surname} />
 		</>

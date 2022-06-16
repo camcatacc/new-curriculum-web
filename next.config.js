@@ -6,6 +6,9 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 module.exports = withBundleAnalyzer({
+	images: {
+		domains: ["images.ctfassets.net"]
+	},
 	reactStrictMode: true,
 	i18n: i18n
 });

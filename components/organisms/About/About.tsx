@@ -19,6 +19,7 @@ import type { Document } from "@contentful/rich-text-types";
 export interface AboutProps {
 	name: string;
 	surname: string;
+	imageSrc: string;
 	paragraphsDoc: Document;
 	animated?: boolean;
 }
@@ -39,16 +40,15 @@ const getTextMotionOptions = (animated?: boolean) => {
 };
 
 // Element
-const About = ({ name, surname, paragraphsDoc, animated = false }: AboutProps) => {
+const About = ({ name, surname, paragraphsDoc, animated = false, imageSrc }: AboutProps) => {
 	const theme = useTheme();
 	const paragraphs = customDocumentToReactComponent(paragraphsDoc, { boldColor: true, theme });
 	const textMotionOptions = getTextMotionOptions(animated);
 	const imageMotionOptions = getMotionFlipOptions(animated, {});
-
 	return (
 		<Styled.ParentContainer className="flex flex-col md:flex-row items-center">
 			<Styled.FirstChildContainer {...imageMotionOptions} className="w-3/5 md:w-auto">
-				<AvatarWithName name={name} surname={surname} />
+				<AvatarWithName name={name} surname={surname} imageSrc={imageSrc} />
 			</Styled.FirstChildContainer>
 			<Styled.SecondChildContainer {...textMotionOptions} className="mt-4 md:mt-0 flex gap-8 flex-col justify-center">
 				{paragraphs}

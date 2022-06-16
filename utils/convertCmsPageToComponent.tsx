@@ -25,7 +25,10 @@ const convertCmsPageToComponent = (page: ContentfulEntry<CmsPage>) => {
 	}
 };
 
-const presentationCmsToComponent = (page: CmsPresentationPage) => <Presentation {...page} />;
+const presentationCmsToComponent = (page: CmsPresentationPage) => {
+	const image = page.image.fields.file.url;
+	return <Presentation {...page} image={image} />;
+};
 const abilitiesCmsToComponent = (page: CmsAbilitiesPage) => {
 	const lists = page.abilitiesLists.map((abList) => {
 		return {
