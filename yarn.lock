@@ -1607,10 +1607,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hardru/curriculum-web-components@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@hardru/curriculum-web-components/-/curriculum-web-components-1.0.12.tgz#dfe6c20311b272abba526346a87b469c2d790fea"
-  integrity sha512-rzt+45l5WMkrtf362SZ95U9IXG5uBOIHbSEJWsk13GmjOBo/K8zLU9El4BK/lzAEMZnNimyiV2VAtP1ZFGDk0A==
+"@hardru/curriculum-web-components@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@hardru/curriculum-web-components/-/curriculum-web-components-1.0.14.tgz#1cf8945fe4993caef9257c56bdc77a5ea60ef383"
+  integrity sha512-LUqPakktSyu2rpwQwW6198RC1AtIPq98h7mykEEH81+IsDAhntprGAvql5RCahmb8iLe/Y7dH2XEMxnh2w5g8A==
   dependencies:
     "@craco/craco" "^6.4.2"
     craco "0.0.3"

@@ -16,7 +16,7 @@
 	},
 	"dependencies": {
 		"@babel/preset-typescript": "^7.16.0",
-		"@hardru/curriculum-web-components": "^1.0.12",
+		"@hardru/curriculum-web-components": "^1.0.14",
 		"@contentful/rich-text-html-renderer": "^15.6.2",
 		"@contentful/rich-text-react-renderer": "^15.6.2",
 		"@emotion/cache": "^11.5.0",
@@ -63,5 +63,17 @@
 		"postcss": "^8.3.6",
 		"react-test-renderer": "^17.0.2",
 		"typescript": "4.3.5"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	}
 }

@@ -1,7 +1,7 @@
 // Modules
 import React from "react";
 import { useTheme } from "@material-ui/core";
-
+import Image from "next/image";
 // Elements
 import { SectionTitle, About } from "@hardru/curriculum-web-components";
 
@@ -22,7 +22,7 @@ const Presentation = ({ className, title, aboutText, name, surname }: Presentati
 	return (
 		<div className={`flex flex-col justify-center ${className}`}>
 			<SectionTitle animated>{title}</SectionTitle>
-			<About name={name} surname={surname} paragraphs={paragraphs} animated image="/avatar.jpg" />
+			<About name={name} surname={surname} paragraphs={paragraphs} animated image={{ Wrapper: Image, src: "/avatar.jpg", imageProps: { layout: "fill" } }} />
 		</div>
 	);
 };
