@@ -1,5 +1,10 @@
 export interface RootState {
+	ui: UI;
 	contact: Contact;
+}
+
+export interface UI {
+	nightMode: boolean;
 }
 
 export interface Contact {
