@@ -11,6 +11,7 @@ import customDocumentToReactComponent from "utils/customDocumentToReactComponent
 
 // Definitions
 import type { CmsGroupBarAbilitiesList, CmsAbilitiesList } from "interfaces/cms/pages/Abilities";
+import { useTheme } from "@material-ui/core";
 
 export interface AbilitiesProps {
 	title: string;
@@ -19,10 +20,12 @@ export interface AbilitiesProps {
 
 // Element
 const Abilities = ({ title, abilitiesLists }: AbilitiesProps) => {
+	const theme = useTheme();
+
 	const formattedGroupAbilities = (list: CmsAbilitiesList): AbilityProps[] =>
 		list.abilities
 			.map((ab) => ab.fields)
-			.map((ab) => ({ icon: ab.icon, title: ab.title, description: customDocumentToReactComponent(ab.text, { variant: "body2", align: "center" }) }));
+			.map((ab) => ({ icon: ab.icon, title: ab.title, description: customDocumentToReactComponent(ab.text, { variant: "body2", align: "center", theme }) }));
 
 	const formattedGroupBarAbilities = (group: CmsGroupBarAbilities): BarAbilityProps[] =>
 		group.abilities.map(({ fields: ab }) => ({
